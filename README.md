@@ -13,7 +13,7 @@
 
 ### Kanban Board
 
-- [Project Kanban Board](https://zube.io/enigmadragons/santas-magic-night/w/board/kanban)
+- [Project Kanban Board](https://zube.io/enigmadragons/santas-magic-night/w/santas-magic-night/kanban)
 
 - [Kanban Workflow Process](./guides/kanban-workflow-guide.md)
 - [Kanban Board Setup](./guide/kanban-board-guide.md)
