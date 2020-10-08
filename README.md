@@ -6,7 +6,7 @@
 
 - [Game Design Document](./design/game-design-document.md)
 - [Kanban Workflow Process](./guides/kanban-workflow-guide.md)
-- [Kanban Board Setup](./guide/kanban-board-guide.md)
+- [Kanban Board Setup](./guides/kanban-board-guide.md)
 - [Unity Programming Guidelines](./guides/unity-design-guidelines.md)
 
 ----
