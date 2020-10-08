@@ -37,7 +37,6 @@ public class CurrentLevelMap : ScriptableObject
 
     public void InitLevel(string activeLevelName)
     {
-        Debug.Log($"Init Level");
         HasLost = false;
         levelName = activeLevelName;
         min = new Vector2();
@@ -61,7 +60,6 @@ public class CurrentLevelMap : ScriptableObject
     public void RegisterAsSelectable(GameObject obj) => selectableObjects.Add(obj);
     public void RegisterAsJumpable(GameObject obj)
     {
-        Debug.Log($"Jumpable {obj.name}");
         jumpableObjects.Add(obj);
     }
 
