@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d517a16cc2441c9b71669626557b2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: C:\temp\Screenshots\DeliveryTime\s
+  basePath: c:\temp\screenshots

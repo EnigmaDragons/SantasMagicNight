@@ -1,20 +1,26 @@
+using System.IO;
 using UnityEngine;
 
 #if UNITY_EDITOR_WIN
-using UnityEngine.Windows;
+using File = UnityEngine.Windows.File;
 #endif
 
 public class EzScreen : CrossSceneSingleInstance
 {
-    [SerializeField] private string filename;
+    [SerializeField] private string basePath;
     
     protected override string UniqueTag => "Screenshots";
     private static int _counter;
 
+    private string DirPath => Path.Combine(basePath, Application.productName);
+    private string FilePath => Path.Combine(DirPath, "scr");
+
     protected override void OnAwake()
     {
 #if UNITY_EDITOR_WIN
-        while (File.Exists($"{filename}_{_counter}.png"))
+        if (!Directory.Exists(DirPath))
+            Directory.CreateDirectory(DirPath);
+        while (File.Exists($"{FilePath}_{_counter}.png"))
             _counter++;
 #endif
     }
@@ -23,7 +29,7 @@ public class EzScreen : CrossSceneSingleInstance
     {
         if (Input.GetKeyDown(KeyCode.F12))
         {
-            var n = $"{filename}_{_counter++}.png";
+            var n = $"{FilePath}_{_counter++}.png";
             ScreenCapture.CaptureScreenshot(n);
             Debug.Log($"Captured screenshot: {n}");
         }
