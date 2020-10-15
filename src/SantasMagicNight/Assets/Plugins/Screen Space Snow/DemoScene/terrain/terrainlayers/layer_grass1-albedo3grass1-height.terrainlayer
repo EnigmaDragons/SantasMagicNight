@@ -6,7 +6,7 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: layer_grass1-albedo3grass1-height(2.000,2.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000
+  m_Name: layer_grass1-albedo3grass1-height
   m_DiffuseTexture: {fileID: 2800000, guid: bf533c107dfdfa7478c11735920cb662, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: 4810f5d8aa49cc247825d53a73d69e04, type: 3}
   m_MaskMapTexture: {fileID: 0}

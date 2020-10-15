@@ -6,7 +6,7 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: layer_rockrockNormals(15.000,15.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000
+  m_Name: layer_rockrockNormals
   m_DiffuseTexture: {fileID: 2800000, guid: 7c08b8ba9fd947544962afe0547348f3, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: b8187ad315a0bcd47909bfa5f6639f76, type: 3}
   m_MaskMapTexture: {fileID: 0}
