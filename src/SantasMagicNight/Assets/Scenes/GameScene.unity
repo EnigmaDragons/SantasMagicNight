@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 488400709}
   - component: {fileID: 488400712}
   m_Layer: 0
-  m_Name: CarvanaPoints
+  m_Name: GingerbreadMen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3698,7 +3698,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc99ae56853debe48b34e21085d8933d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 033de1ef8b95c0c4dadb627619d71864, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3729,7 +3729,7 @@ GameObject:
   - component: {fileID: 1628158849}
   - component: {fileID: 1628158848}
   m_Layer: 0
-  m_Name: CarvanaPointsUI
+  m_Name: PointsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
