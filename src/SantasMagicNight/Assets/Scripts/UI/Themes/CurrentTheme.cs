@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-[CreateAssetMenu]
+[Obsolete, CreateAssetMenu(menuName = "Theme/Current Theme")]
 public sealed class CurrentTheme : ScriptableObject
 {
     [SerializeField] private Theme theme;

@@ -1,8 +1,9 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-[CreateAssetMenu]
+[Obsolete, CreateAssetMenu(menuName = "Theme/Theme")]
 public sealed class Theme : ScriptableObject
 {
     [SerializeField] public ColorReference defaultColor;

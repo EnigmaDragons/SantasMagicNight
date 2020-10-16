@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "DeliveryTime/Navigator")]
 public sealed class DeliveryTimeNavigator : ScriptableObject
 {
     public void NavigateToGameScene() => SceneManager.LoadScene("DeliveryTimeGameScene");

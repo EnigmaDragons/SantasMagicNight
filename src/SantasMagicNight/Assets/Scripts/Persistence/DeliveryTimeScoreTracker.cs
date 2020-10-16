@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "DeliveryTime/ScoreTracker")]
 public sealed class DeliveryTimeScoreTracker : ScriptableObject
 {
     [SerializeField] private List<int> numStars = new List<int>();

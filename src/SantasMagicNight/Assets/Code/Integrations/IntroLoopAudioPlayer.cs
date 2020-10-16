@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "OnlyOnce/IntroLoopAudioPlayer")]
 public class IntroLoopAudioPlayer : ScriptableObject
 {
     [SerializeField] private IntroloopAudio currentClip;

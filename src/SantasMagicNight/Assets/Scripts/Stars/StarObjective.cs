@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Score/StarObjective")]
 public class StarObjective : ScriptableObject
 {
     [SerializeField] private string objective;

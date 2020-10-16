@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "State/MoveHistory")]
 public sealed class MoveHistory : ScriptableObject
 {
     [SerializeField] private GameEvent onChanged;

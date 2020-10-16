@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "State/CurrentMoveCounter")]
 public class CurrentMoveCounter : ScriptableObject
 {
     [SerializeField] private int count;

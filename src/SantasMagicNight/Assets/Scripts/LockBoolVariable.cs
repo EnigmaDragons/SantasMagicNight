@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "State/LockBoolVariable")]
 public class LockBoolVariable : ScriptableObject
 {
     [SerializeField] private BoolVariable innerVariable;

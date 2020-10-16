@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Rules/Movement/MayLeap")]
 public class MayLeap : MovementOptionRule
 {
     public override MovementType Type => MovementType.Leap;

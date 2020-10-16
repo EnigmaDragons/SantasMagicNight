@@ -10,8 +10,6 @@ namespace Assets.Scripts.UI
         [SerializeField] private GameObject button;
         [SerializeField] private SaveStorage storage;
         [SerializeField] private BoolVariable isLevelStart;
-        [SerializeField] private CurrentDialogue currentDialogue;
-        [SerializeField] private BoolReference AutoSkipStory;
         [SerializeField] private IsLevelUnlockedCondition isLevelUnlockedCondition;
 
         private Campaign _campaign => zone.Campaign;
@@ -28,12 +26,8 @@ namespace Assets.Scripts.UI
             var gameLevel = _campaign.Value[level.ZoneNumber].Value[nextLevel];
             level.SelectLevel(gameLevel, level.ZoneNumber, nextLevel);
             isLevelStart.Value = true;
-            currentDialogue.Set(storage.GetStars(gameLevel) == 0 ? _campaign.Value[level.ZoneNumber].CurrentStory() : new Maybe<ConjoinedDialogues>());
             storage.SaveZone(level.ZoneNumber);
-            if (AutoSkipStory.Value || !currentDialogue.Dialogue.IsPresent) 
-                navigator.NavigateToGameScene();
-            else
-                navigator.NavigateToDialogue();
+            navigator.NavigateToGameScene();
         }
     }
 }

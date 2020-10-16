@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Rules/Movement/MayNotMoveToBlocked")]
 public sealed class MayNotMoveToBlocked : MovementRestrictionRule
 {
     [SerializeField] private CurrentLevelMap map;

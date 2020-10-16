@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "State/CurrentSelectedPiece")]
 public class CurrentSelectedPiece : ScriptableObject
 {
     [SerializeField] private Maybe<GameObject> selected = new Maybe<GameObject>();

@@ -7,7 +7,7 @@ using UnityEngine;
 using File = UnityEngine.Windows.File;
 #endif
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Experimental/CurrentMapTokenizer")]
 public sealed class CurrentMapTokenizer : ScriptableObject
 {
     private LevelMapBuilder _builder = new LevelMapBuilder("Uninitialized");

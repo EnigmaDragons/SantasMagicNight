@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Conditions/IsLevelUnlocked")]
 public sealed class IsLevelUnlockedCondition : ScriptableObject
 {
     [SerializeField] private CurrentZone zone;

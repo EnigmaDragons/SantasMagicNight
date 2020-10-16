@@ -4,7 +4,7 @@ using System.IO;
 using UnityEngine;
 using System.Linq;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "")]
 public class SaveStorage : ScriptableObject
 {
     [SerializeField] private CurrentZone current; 

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Rules/Movement/MustMoveToWalkable")]
 public class MustMoveToWalkable : MovementRestrictionRule
 {
     [SerializeField] private CurrentLevelMap map;

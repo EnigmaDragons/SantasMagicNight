@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "OnlyOnce/DisplaySettings")]
 public sealed class DisplaySettings : ScriptableObject
 {
     [SerializeField] private bool isFullscreen = true;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Rules/Victory/OneHeroEndsAdjacentToTheBitVault")]
 public sealed class OneHeroEndsAdjacentToTheBitVault : VictoryCondition
 {
     public override bool HasCompletedLevel(CurrentLevelMap map)

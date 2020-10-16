@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "OnlyOnce/LayoutMode")]
 public class LayoutMode : ScriptableObject
 {
     public bool IsTall => Screen.height > Screen.width;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "State/CurrentLevelMap")]
 public class CurrentLevelMap : ScriptableObject
 {
     [SerializeField] private TilePoint bitVaultLocation;
