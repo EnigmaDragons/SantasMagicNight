@@ -1,0 +1,8 @@
+October 21st: Prototyping/Game Skeleton Finished
+October 27th: (38% Puzzles Complete)
+November 2nd: Begin App Beta Testing. (75% Puzzles Complete - First Draft)
+November 12th: All levels ready for testing. (100% Puzzles Complete)
+November 18th: App Store video finished. 
+November 19th: Gold Build of Game uploaded to App Stores. App Store metadata and screenshots all finished.
+November 20th: Submit for iOS/Google Play/Steam Approval
+December 1st: Game Initial Release Date (Android/iOS)0
