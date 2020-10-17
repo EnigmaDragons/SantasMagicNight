@@ -668,10 +668,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: dbb46bc1-4707-48d2-bcbf-298460e2f251
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Santa's Magic Night
+  organizationId: enigma-dragons
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
