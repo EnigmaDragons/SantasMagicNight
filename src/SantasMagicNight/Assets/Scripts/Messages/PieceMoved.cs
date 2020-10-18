@@ -23,5 +23,11 @@ public sealed class PieceMoved
         return hasJumpedOver;
     }
 
+    public bool HasSelected(GameObject other)
+    {
+        var hasSelected = (To.X == other.transform.localPosition.x && To.Y == other.transform.localPosition.y);
+        return hasSelected;
+    }
+
     public void Undo() => Message.Publish(new UndoPieceMoved(Piece, From, To));
 }

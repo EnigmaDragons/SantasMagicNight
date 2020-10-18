@@ -20,8 +20,7 @@ public sealed class RestoreIfJumpedOnUndo : OnMessage<UndoPieceMoved, ObjectDest
             Message.Publish(new UndoObjectDestroyed(obj));
             _damagedObjects.Pop();
         }
-        
-        
+
         var destroyIfJumpedAlt = obj.GetComponent<DestroyIfJumpedNoDeathAnim>();
         if (destroyIfJumpedAlt != null)
         {
@@ -34,6 +33,14 @@ public sealed class RestoreIfJumpedOnUndo : OnMessage<UndoPieceMoved, ObjectDest
         if (destroyIfDoubleJumpedComponent != null)
         {
             destroyIfDoubleJumpedComponent.Revert();
+            Message.Publish(new UndoObjectDestroyed(obj));
+            _damagedObjects.Pop();
+        }
+
+        var destroyIfLinked = obj.GetComponent<DestroyIfLinked>();
+        if (destroyIfLinked != null)
+        {
+            destroyIfLinked.Revert();
             Message.Publish(new UndoObjectDestroyed(obj));
             _damagedObjects.Pop();
         }

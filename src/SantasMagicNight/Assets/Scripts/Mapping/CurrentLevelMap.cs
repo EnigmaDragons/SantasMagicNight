@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class CurrentLevelMap : ScriptableObject
     [SerializeField] private List<GameObject> blockedTiles = new List<GameObject>();
     [SerializeField] private HashSet<GameObject> jumpableObjects = new HashSet<GameObject>();
     [SerializeField] private List<GameObject> selectableObjects = new List<GameObject>();
+    [SerializeField] private HashSet<GameObject> linkableObjects = new HashSet<GameObject>();
     [SerializeField] private List<GameObject> collectibleObjects = new List<GameObject>();
     [SerializeField] private Dictionary<GameObject, ObjectRules> destroyedObjects = new Dictionary<GameObject, ObjectRules>();
     [SerializeField] private Transform finalCameraAngle;
@@ -47,6 +49,7 @@ public class CurrentLevelMap : ScriptableObject
         blockedTiles = new List<GameObject>();
         jumpableObjects = new HashSet<GameObject>();
         selectableObjects = new List<GameObject>();
+        linkableObjects = new HashSet<GameObject>();
         collectibleObjects = new List<GameObject>();
         destroyedObjects = new Dictionary<GameObject, ObjectRules>();
         movementOptionRules = new List<MovementOptionRule>();
@@ -58,10 +61,8 @@ public class CurrentLevelMap : ScriptableObject
     public void AddMovementRestrictionRule(MovementRestrictionRule restrictionRule) => movementRestrictionRules.Add(restrictionRule);
 
     public void RegisterAsSelectable(GameObject obj) => selectableObjects.Add(obj);
-    public void RegisterAsJumpable(GameObject obj)
-    {
-        jumpableObjects.Add(obj);
-    }
+    public void RegisterAsJumpable(GameObject obj) => jumpableObjects.Add(obj);
+    public void RegisterAsLinkable(GameObject obj) => linkableObjects.Add(obj);
 
     public void RegisterBitVault(GameObject obj) => bitVaultLocation = new TilePoint(obj);
     public void RegisterWalkableTile(GameObject obj) => UpdateSize(() => walkableTiles.Add(obj));
@@ -82,8 +83,9 @@ public class CurrentLevelMap : ScriptableObject
 
     public bool IsJumpable(TilePoint tile) => jumpableObjects.Any(t => new TilePoint(t).Equals(tile));
     public bool IsWalkable(TilePoint tile) => walkableTiles.Any(w => new TilePoint(w).Equals(tile));
+    public bool IsLinkable(TilePoint tile) => linkableObjects.Any(t => new TilePoint(t).Equals(tile));
     public bool IsBlocked(TilePoint tile) => blockedTiles.Any(t => new TilePoint(t).Equals(tile));
-    
+
     public void Move(GameObject obj, TilePoint from, TilePoint to)
         => Notify(() => {});
 
@@ -103,6 +105,8 @@ public class CurrentLevelMap : ScriptableObject
                 RegisterWalkableTile(obj);
             if (rules.IsCollectible)
                 RegisterAsCollectible(obj);
+            if (rules.IsLinkable)
+                RegisterAsLinkable(obj);
         });
     }
     
@@ -116,7 +120,8 @@ public class CurrentLevelMap : ScriptableObject
                 IsJumpable = jumpableObjects.Remove(obj),
                 IsBlocking = blockedTiles.Remove(obj),
                 IsSelectable = selectableObjects.Remove(obj),
-                IsCollectible = collectibleObjects.Remove(obj)
+                IsCollectible = collectibleObjects.Remove(obj),
+                IsLinkable = linkableObjects.Remove(obj)
             };
         });
     }
@@ -204,6 +209,7 @@ public class CurrentLevelMap : ScriptableObject
         public bool IsSelectable { get; set; }
         public bool IsBlocking { get; set; }
         public bool IsCollectible { get; set; }
+        public bool IsLinkable { get; set; }
     }
 }
 
