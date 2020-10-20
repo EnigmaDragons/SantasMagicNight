@@ -63,7 +63,7 @@ Material:
     - _Length: 4
     - _LightAbs: 0
     - _NormalOffset: 1
-    - _Opacity: 0.4
+    - _Opacity: 1
     - _PointLights: 0
     - _RHeight: 0.2
     - _RHeight_: 0.2
@@ -77,7 +77,7 @@ Material:
     - _Shadow: 0.6
     - _ShoreDistance: 0.5
     - _ShoreIntensity: 1
-    - _Specular: 92
+    - _Specular: 88
     - _Speed: 0.5
     - _Speed_: 0.5
     - _Steepness: 0.15
@@ -88,11 +88,11 @@ Material:
     - _Waves: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.6006591, b: 0.75735295, a: 1}
+    - _Color: {r: 0.0069419593, g: 0.39033303, b: 0.49056602, a: 1}
     - _DeepColor: {r: 0, g: 0.20955881, b: 0.41911763, a: 1}
     - _Direction_: {r: -1, g: -0.00000008742278, b: -0.6, a: -0.000000052453668}
     - _FresColor: {r: 0.36689016, g: 0.52222586, b: 0.5735294, a: 1}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.6764706, g: 0.6359274, b: 0.2785467, a: 1}
-    - _Sun: {r: -0.6520011, g: 0.6726526, b: 0.34990406, a: 0}
-    - _SunColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Sun: {r: -0.4077304, g: 0.7660445, b: -0.4969223, a: 0}
+    - _SunColor: {r: 1, g: 0.976153, b: 0.8773585, a: 1}

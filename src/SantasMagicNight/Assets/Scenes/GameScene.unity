@@ -411,16 +411,16 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.976153, b: 0.8773585, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.601
+    m_Strength: 0
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -5527,11 +5527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navigator: {fileID: 11400000, guid: 9ff41b1c7e54dd34d86e0faa800274fc, type: 2}
   isLevelStart: {fileID: 11400000, guid: 88418d1442fdadb4ab469f94a2b79527, type: 2}
-  AutoSkipStory:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 02a3e05f882726f418a67feb2905e525, type: 2}
-  dialogue: {fileID: 11400000, guid: b9a604ab247fc6b46b102d550e48e5fc, type: 2}
 --- !u!114 &5097479852497357279
 MonoBehaviour:
   m_ObjectHideFlags: 0
