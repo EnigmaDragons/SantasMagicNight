@@ -44,14 +44,27 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
             linkList.Add(linkableObj);
         }
         TilePoint origin = msg.To;
-
+        bool isMovementInXAxis = msg.Delta.X == 1 && msg.Delta.Y == 0;
         for(int i = 0; i < linkList.Count; i++)
         {
             for (int j = 0; j < linkList.Count; j++)
             {
                 if (!linkList[j].isActiveAndEnabled) continue;
+                
                 TilePoint destination = new TilePoint((int)linkList[j].transform.localPosition.x, (int)linkList[j].transform.localPosition.y);
                 if (origin == destination) continue;
+
+                if (isMovementInXAxis)
+                {
+                    TilePoint diff = origin - destination;
+                    if (diff.Y != 0) continue;
+                }
+                else
+                {
+                    TilePoint diff = origin - destination;
+                    if (diff.X != 0) continue;
+                }
+
                 if (destination.IsAdjacentTo(origin))
                 {
                     Debug.Log("Looking at tile: " + destination + " and the origin is " + origin);
