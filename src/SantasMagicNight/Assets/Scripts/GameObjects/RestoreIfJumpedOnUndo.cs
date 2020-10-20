@@ -65,7 +65,7 @@ public sealed class RestoreIfJumpedOnUndo : OnMessage<UndoPieceMoved, ObjectDest
 
     protected override void Execute(ObjectDestroyed msg)
     {
-        Debug.Log("Pushing to destroyed stack: " + msg.Object.name);
+        //Debug.Log("Pushing to destroyed stack: " + msg.Object.name);
         _damagedObjects.Push(msg.Object);
     }
 

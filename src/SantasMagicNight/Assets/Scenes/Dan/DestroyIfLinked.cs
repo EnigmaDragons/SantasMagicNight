@@ -6,6 +6,7 @@ public sealed class DestroyIfLinked : OnMessage<PieceMoved>
     protected override void Execute(PieceMoved msg)
     {
         if (!msg.HasSelected(gameObject)) return;
+        Debug.Log(gameObject.name);
         Message.Publish(new ObjectDestroyed(gameObject, false));
         FindObjectOfType<MoveProcessor>().ProcessLinkable(msg);
     }

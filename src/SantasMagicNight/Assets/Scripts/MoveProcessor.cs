@@ -35,6 +35,7 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
 
     IEnumerator ProcessLinkableCoroutine(PieceMoved msg)
     {
+        Debug.Log("Process Linkable Started");
         isProcessing = true;
         RegisterAsLinkable[] linkableObjects = FindObjectsOfType<RegisterAsLinkable>();
         List<RegisterAsLinkable> linkList = new List<RegisterAsLinkable>();
@@ -42,8 +43,6 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
         {
             linkList.Add(linkableObj);
         }
-
-        Debug.Log("Entered Coroutine" + linkableObjects.Length);
         TilePoint origin = msg.To;
 
         for(int i = 0; i < linkList.Count; i++)
@@ -69,8 +68,7 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
                 }
             }
         }
-
-        Debug.Log("Exiting Coroutine" + linkableObjects.Length);
         isProcessing = false;
+        Debug.Log("Process Linkable Ended");
     }
 }
