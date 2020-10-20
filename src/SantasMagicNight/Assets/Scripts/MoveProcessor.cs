@@ -58,9 +58,13 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
                     Debug.Log("Looking at tile: " + destination + " and the origin is " + origin);
                     yield return new WaitForSeconds(0.5f);
                     Message.Publish(new PieceMoved(msg.Piece, origin, destination));
+
+                    if (linkList[j].gameObject.activeInHierarchy)
+                    {
+                        Message.Publish(new ObjectDestroyed(linkList[j].gameObject, false));
+                    }
+
                     origin = destination;
-                    Debug.Log("Destroying: " + linkList[j].gameObject.name);
-                    Message.Publish(new ObjectDestroyed(linkList[j].gameObject, false));
                     break;
                 }
             }

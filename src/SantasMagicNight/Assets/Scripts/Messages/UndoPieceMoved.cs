@@ -16,4 +16,6 @@ public sealed class UndoPieceMoved
 
     public bool HadJumpedOver(GameObject other) => From.IsAdjacentTo(new TilePoint(other)) && To.IsAdjacentTo(new TilePoint(other))
                                                                                            && (To.X == From.X || To.Y == From.Y);
+
+    public bool HadSteppedOn(GameObject other) => (To.IsAdjacentTo(From));
 }

@@ -10,9 +10,14 @@ public sealed class RestoreIfJumpedOnUndo : OnMessage<UndoPieceMoved, ObjectDest
         if (_damagedObjects.Count == 0)
             return;
         RestoreAllCollectedStars();
+
         var obj = _damagedObjects.Peek();
-        if (!msg.HadJumpedOver(obj)) return;
-        
+
+        Debug.Log("Undo Object: " + obj.name);
+        Debug.Log("Undo Piece: " + msg.Piece);
+        Debug.Log("To: " + msg.To);
+        Debug.Log("From: " + msg.From);
+
         var destroyIfJumpedComponent = obj.GetComponent<DestroyIfJumped>();
         if (destroyIfJumpedComponent != null)
         {
@@ -58,7 +63,12 @@ public sealed class RestoreIfJumpedOnUndo : OnMessage<UndoPieceMoved, ObjectDest
         }
     }
 
-    protected override void Execute(ObjectDestroyed msg) => _damagedObjects.Push(msg.Object);
+    protected override void Execute(ObjectDestroyed msg)
+    {
+        Debug.Log("Pushing to destroyed stack: " + msg.Object.name);
+        _damagedObjects.Push(msg.Object);
+    }
+
     protected override void Execute(LevelReset msg) => _damagedObjects.Clear();
     protected override void Execute(PieceJumped msg) => _damagedObjects.Push(msg.Piece);
 }
