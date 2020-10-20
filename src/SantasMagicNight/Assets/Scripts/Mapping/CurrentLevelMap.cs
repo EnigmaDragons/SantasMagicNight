@@ -11,6 +11,7 @@ public class CurrentLevelMap : ScriptableObject
     [SerializeField] private GameObject hero;
     [SerializeField] private List<GameObject> walkableTiles = new List<GameObject>();
     [SerializeField] private List<GameObject> blockedTiles = new List<GameObject>();
+    [SerializeField] private List<GameObject> pushingTiles = new List<GameObject>();
     [SerializeField] private HashSet<GameObject> jumpableObjects = new HashSet<GameObject>();
     [SerializeField] private List<GameObject> selectableObjects = new List<GameObject>();
     [SerializeField] private HashSet<GameObject> linkableObjects = new HashSet<GameObject>();
@@ -47,6 +48,7 @@ public class CurrentLevelMap : ScriptableObject
         hero = null;
         walkableTiles = new List<GameObject>();
         blockedTiles = new List<GameObject>();
+        pushingTiles = new List<GameObject>();
         jumpableObjects = new HashSet<GameObject>();
         selectableObjects = new List<GameObject>();
         linkableObjects = new HashSet<GameObject>();
@@ -67,6 +69,7 @@ public class CurrentLevelMap : ScriptableObject
     public void RegisterBitVault(GameObject obj) => bitVaultLocation = new TilePoint(obj);
     public void RegisterWalkableTile(GameObject obj) => UpdateSize(() => walkableTiles.Add(obj));
     public void RegisterBlockingObject(GameObject obj) => UpdateSize(() => blockedTiles.Add(obj));
+    public void RegisterPushingTile(GameObject obj) => UpdateSize(() => pushingTiles.Add(obj));
     public void RegisterAsCollectible(GameObject obj) => collectibleObjects.Add(obj);
     public void RegisterFinalCameraAngle(Transform t) => finalCameraAngle = t;
 
@@ -81,10 +84,15 @@ public class CurrentLevelMap : ScriptableObject
     public Maybe<GameObject> GetTile(TilePoint tile) => walkableTiles.FirstAsMaybe(o => new TilePoint(o).Equals(tile));
     public Maybe<GameObject> GetSelectable(TilePoint tile) =>  selectableObjects.FirstAsMaybe(o => new TilePoint(o).Equals(tile));
 
-    public bool IsJumpable(TilePoint tile) => jumpableObjects.Any(t => new TilePoint(t).Equals(tile));
-    public bool IsWalkable(TilePoint tile) => walkableTiles.Any(w => new TilePoint(w).Equals(tile));
-    public bool IsLinkable(TilePoint tile) => linkableObjects.Any(t => new TilePoint(t).Equals(tile));
+    // Tiles
     public bool IsBlocked(TilePoint tile) => blockedTiles.Any(t => new TilePoint(t).Equals(tile));
+    public bool IsWalkable(TilePoint tile) => walkableTiles.Any(w => new TilePoint(w).Equals(tile));
+    public bool IsPushing(TilePoint tile) => pushingTiles.Any(w => new TilePoint(w).Equals(tile));
+
+    // Objects
+    public bool IsJumpable(TilePoint tile) => jumpableObjects.Any(t => new TilePoint(t).Equals(tile));
+    public bool IsLinkable(TilePoint tile) => linkableObjects.Any(t => new TilePoint(t).Equals(tile));
+
 
     public void Move(GameObject obj, TilePoint from, TilePoint to)
         => Notify(() => {});
@@ -107,6 +115,8 @@ public class CurrentLevelMap : ScriptableObject
                 RegisterAsCollectible(obj);
             if (rules.IsLinkable)
                 RegisterAsLinkable(obj);
+            if (rules.IsPushing)
+                RegisterAsLinkable(obj);
         });
     }
     
@@ -117,9 +127,10 @@ public class CurrentLevelMap : ScriptableObject
             destroyedObjects[obj] = new ObjectRules
             {
                 IsWalkable = walkableTiles.Remove(obj),
-                IsJumpable = jumpableObjects.Remove(obj),
                 IsBlocking = blockedTiles.Remove(obj),
+                IsPushing = pushingTiles.Remove(obj),
                 IsSelectable = selectableObjects.Remove(obj),
+                IsJumpable = jumpableObjects.Remove(obj),
                 IsCollectible = collectibleObjects.Remove(obj),
                 IsLinkable = linkableObjects.Remove(obj)
             };
@@ -210,6 +221,7 @@ public class CurrentLevelMap : ScriptableObject
         public bool IsBlocking { get; set; }
         public bool IsCollectible { get; set; }
         public bool IsLinkable { get; set; }
+        public bool IsPushing { get; set; }
     }
 }
 
