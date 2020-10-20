@@ -1,19 +1,26 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-public class SantaMainMenuUiController : OnMessage<ShowOptionsMenu, HideOptionsMenu>
+public class SantaMainMenuUiController : OnMessage<ShowOptionsMenu, HideCurrentSubMenu, ShowLevelSelect>
 {
     [SerializeField] private GameObject mainMenuRoot;
     [SerializeField] private GameObject optionsMenu;
-    
-    protected override void Execute(ShowOptionsMenu msg)
-    {
-        mainMenuRoot.SetActive(false);
-        optionsMenu.SetActive(true);
-    }
+    [SerializeField] private GameObject levelSelect;
 
-    protected override void Execute(HideOptionsMenu msg)
+    private void HideAllAndThen(Action afterHiding)
     {
+        levelSelect.SetActive(false);
+        mainMenuRoot.SetActive(false);
         optionsMenu.SetActive(false);
-        mainMenuRoot.SetActive(true);
+        afterHiding();
     }
+    
+    protected override void Execute(ShowOptionsMenu msg) 
+        => HideAllAndThen(() => optionsMenu.SetActive(true));
+
+    protected override void Execute(HideCurrentSubMenu msg)
+        => HideAllAndThen(() => mainMenuRoot.SetActive(true));
+
+    protected override void Execute(ShowLevelSelect msg)
+        => HideAllAndThen(() => levelSelect.SetActive(true));
 }
