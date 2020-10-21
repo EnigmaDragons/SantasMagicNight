@@ -6,8 +6,8 @@ using UnityEngine.Events;
 
 public class ExecuteAfterDelay : MonoBehaviour
 {
-    [SerializeField] private UnityEvent action;
     [SerializeField] private float delaySeconds;
+    [SerializeField] private UnityEvent action;
 
     private void Awake()
     {

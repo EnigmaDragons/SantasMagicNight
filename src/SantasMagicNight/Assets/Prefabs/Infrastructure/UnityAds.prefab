@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4057808000662346942}
   - component: {fileID: 8508170140792958993}
+  - component: {fileID: 4526406335523367178}
   m_Layer: 0
   m_Name: UnityAds
   m_TagString: Untagged
@@ -45,3 +46,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appleGameId: {fileID: 11400000, guid: db454597387f56848b0bebc1521e3df1, type: 2}
   googleGameId: {fileID: 11400000, guid: fdd136701656c184d96fc550d46f10b4, type: 2}
+--- !u!114 &4526406335523367178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163889265411828235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3726334c91f444e862f4659c44ede66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adEngineTimeoutSeconds:
+    UseConstant: 0
+    ConstantValue: 8
+    FloatVariable: {fileID: 11400000, guid: 40d927956b1bb404bb434ffb9abbe937, type: 2}

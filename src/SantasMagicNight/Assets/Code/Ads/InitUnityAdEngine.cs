@@ -11,8 +11,7 @@ public sealed class InitUnityAdEngine : MonoBehaviour
     private void Start()
     {
         var gameId = "";
-        #if UNITY_EDITOR
-        #elif UNITY_ANDROID
+        #if UNITY_ANDROID
             gameId = googleGameId;
         #elif UNITY_IOS
             gameId = appleGameId;

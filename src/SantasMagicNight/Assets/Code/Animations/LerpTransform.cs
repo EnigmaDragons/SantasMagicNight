@@ -35,10 +35,7 @@ public sealed class LerpTransform : MonoBehaviour
         _currentDuration = Mathf.Min(durationSeconds, _currentDuration + Time.deltaTime);
         var amount = _currentDuration / durationSeconds;
         var smoothedAmount = amount * amount * (3f - 2f * amount);
-        //var rate = Mathf.Pow(Mathf.Log(1.1f), 2);
-        //var amount = Mathf.Pow(-rate * Time.deltaTime, 2);
 
-        Debug.Log($"Delta: {Time.deltaTime} Amount: {amount}, Elapsed: {_currentDuration}, Target: {durationSeconds}");
         transform.localPosition = Vector3.Slerp(initial.localPosition, final.localPosition, smoothedAmount);
         transform.localRotation = Quaternion.Slerp(initial.localRotation, final.localRotation, smoothedAmount);
         transform.localScale = Vector3.Slerp(initial.localScale, final.localScale, smoothedAmount);
