@@ -13,7 +13,7 @@ namespace Assets.Scripts.GameObjects
         {
             if (level.ZoneNumber == zone.Campaign.Value.Length - 1 && storage.GetLevelsCompletedInZone(zone.Zone) == zone.Zone.Value.Length && !storage.HasWon())
             {
-                storage.SaveWin();
+                storage.SaveCampaignWon();
                 navigator.NavigateToCredits();
             }
         }

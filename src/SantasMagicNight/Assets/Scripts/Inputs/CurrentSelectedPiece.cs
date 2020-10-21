@@ -20,8 +20,10 @@ public class CurrentSelectedPiece : ScriptableObject
 
     public void Deselect()
     {
-        if (selected.IsPresent)
+        // In case Maybe was previously Present, but Unity Lifecycle has expired
+        if (selected.IsPresent && selected.Value != null) 
             Debug.Log($"Deselected {selected.Value.name}");
+        
         selected = new Maybe<GameObject>();
         displayObj = null;
         onChange.Publish();

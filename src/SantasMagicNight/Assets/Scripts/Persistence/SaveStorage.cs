@@ -84,7 +84,7 @@ public class SaveStorage : ScriptableObject
     public bool HasVisited(int zone) => SaveData.ZonesVisited.Contains(zone);
     public void Visit(int zone) => _currentSave.Write(s => s.ZonesVisited.Add(zone));
     public bool HasWon() => SaveData.HasWon;
-    public void SaveWin() => _currentSave.Write(x => x.HasWon = true);
+    public void SaveCampaignWon() => _currentSave.Write(x => x.HasWon = true);
     public int GetTotalStars() => CampaignScores().Sum(x => x.Value);
     public int GetStars(GameLevel level) => CampaignScores().ValueOrDefault(level.Id, () => 0);
     public void SaveStars(GameLevel level, int stars)

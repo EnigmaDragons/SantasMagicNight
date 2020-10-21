@@ -20099,8 +20099,8 @@ GameObject:
   - component: {fileID: 6706539931888131511}
   - component: {fileID: 5261991612432239762}
   - component: {fileID: 6336780416438229695}
-  - component: {fileID: 6815042394106056352}
   - component: {fileID: 6815042394106056353}
+  - component: {fileID: 6815042394106056352}
   m_Layer: 0
   m_Name: ReactiveSystems
   m_TagString: Untagged
@@ -20117,13 +20117,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6815042394106056351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aecf8502b1f54189a32d365931bd4f8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c9b4e66ce48421cb608e6c3ea1244c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navigator: {fileID: 11400000, guid: 804502b252705b84a9f224fe6151ae05, type: 2}
-  levels: {fileID: 11400000, guid: d22104c96c6d70043b692034d1f8e0e3, type: 2}
+  navigator: {fileID: 11400000, guid: ad46ee6c8ee26e5438a93f9809839dd7, type: 2}
+  levels: {fileID: 11400000, guid: 2398134ce8ebdb84f8919d1ab64a5310, type: 2}
   currentLevel: {fileID: 11400000, guid: f81c10460cdb9464397ed5864a15114b, type: 2}
-  scoreTracker: {fileID: 11400000, guid: 5be1e6c778403de4eabf988822e74eb9, type: 2}
+  saveStorage: {fileID: 11400000, guid: 1458f9b8798b4f147b62b7883c2ba217, type: 2}
   counter: {fileID: 6815042394106056353}
 --- !u!114 &6815042394106056353
 MonoBehaviour:
