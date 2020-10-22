@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guid: 46937d82-2152-409c-9012-4f956ff45b67
   levelName: Elf Power 101
-  prefab: {fileID: 6467633536996998889, guid: cde1e259cbb6cef459a424f9e60fab50, type: 3}
+  prefab: {fileID: 4906078042327003085, guid: b1275de22d3e62042a97f5f588af73f1, type: 3}
   isTutorial: 0

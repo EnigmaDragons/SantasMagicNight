@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guid: 46937d82-2152-409c-9012-4f956ff45b67
   levelName: Thanks, Gingerbread Man!
-  prefab: {fileID: 3912788152105074471, guid: 7e01762dc7116be48a63746756bbccff, type: 3}
+  prefab: {fileID: 7984032035898209172, guid: 550543277cbe499489a921c1c19bb468, type: 3}
   isTutorial: 0
