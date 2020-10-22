@@ -116,7 +116,7 @@ public class CurrentLevelMap : ScriptableObject
             if (rules.IsLinkable)
                 RegisterAsLinkable(obj);
             if (rules.IsPushing)
-                RegisterAsLinkable(obj);
+                RegisterPushingTile(obj);
         });
     }
     
