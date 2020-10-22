@@ -15,8 +15,7 @@ MonoBehaviour:
   bitVaultLocation:
     X: 0
     Y: 0
-  heroes: []
-  ice: []
+  hero: {fileID: 0}
   walkableTiles:
   - {fileID: 0}
   - {fileID: 0}
@@ -28,22 +27,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   blockedTiles:
-  - X: 3
-    Y: 2
-  - X: 3
-    Y: 6
-  jumpableObjects:
-  - X: 3
-    Y: 2
-  - X: 3
-    Y: 6
+  - {fileID: 0}
+  - {fileID: 0}
+  pushingTiles: []
   selectableObjects:
   - {fileID: 0}
   - {fileID: 0}
+  collectibleObjects: []
+  finalCameraAngle: {fileID: 0}
+  min: {x: 0, y: 0}
+  max: {x: 0, y: 0}
+  levelName: 
   movementOptionRules:
   - {fileID: 11400000, guid: a54fde594c4380f4db6c8356ee844395, type: 2}
   - {fileID: 11400000, guid: bbdc847c4d9fbc24f8a09b3865df7e62, type: 2}
-  - {fileID: 11400000, guid: 31d31ffd259f72f42b38b6032575eb70, type: 2}
   movementRestrictionRules:
   - {fileID: 11400000, guid: aadf7b43d2427c94f8f876864a4e28e9, type: 2}
   - {fileID: 11400000, guid: e2be4b75c1030214f9a710e0a1bee90b, type: 2}

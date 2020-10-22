@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82234f80e9d1f0a4bb25e6fd3de317db, type: 3}
-  m_Name: CurrentLevel
+  m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
+  m_Name: Z1-L1
   m_EditorClassIdentifier: 
-  selectedLevel: {fileID: 11400000, guid: a86ef6cdcd4600e4daed390c0e8e54ef, type: 2}
-  activeLevelPrefab: {fileID: 0}
-  currentZoneNum: 0
-  currentLevelNum: 1
-  enableDebugLogging: 0
+  guid: 46937d82-2152-409c-9012-4f956ff45b67
+  levelName: Elf Power 101
+  prefab: {fileID: 6467633536996998889, guid: cde1e259cbb6cef459a424f9e60fab50, type: 3}
+  isTutorial: 0
