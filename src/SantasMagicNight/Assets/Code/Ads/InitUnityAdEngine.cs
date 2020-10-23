@@ -17,6 +17,6 @@ public sealed class InitUnityAdEngine : MonoBehaviour
             gameId = appleGameId;
         #endif
         
-        Advertisement.Initialize(gameId, isTestMode);
+        Advertisement.Initialize(gameId.Trim(), isTestMode);
     }
 }
