@@ -25,6 +25,9 @@ namespace Inputs
             for (var i = 0; i < numHits; i++)
             {
                 var obj = _hits[i].transform.gameObject;
+                if (obj.layer != 8) 
+                    continue;
+                
                 var tilePoint = new TilePoint(obj);
                 Debug.Log($"Hit Tile {tilePoint} - {obj.name}");
                 Message.Publish(new TileIndicated(tilePoint));

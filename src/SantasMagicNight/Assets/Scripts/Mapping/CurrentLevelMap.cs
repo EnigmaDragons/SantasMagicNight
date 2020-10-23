@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,20 +6,23 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "State/CurrentLevelMap")]
 public class CurrentLevelMap : ScriptableObject
 {
-    [SerializeField] private TilePoint bitVaultLocation;
-    [SerializeField] private GameObject hero;
-    [SerializeField] private List<GameObject> walkableTiles = new List<GameObject>();
-    [SerializeField] private List<GameObject> blockedTiles = new List<GameObject>();
-    [SerializeField] private List<GameObject> pushingTiles = new List<GameObject>();
-    [SerializeField] private HashSet<GameObject> jumpableObjects = new HashSet<GameObject>();
-    [SerializeField] private List<GameObject> selectableObjects = new List<GameObject>();
-    [SerializeField] private HashSet<GameObject> linkableObjects = new HashSet<GameObject>();
-    [SerializeField] private List<GameObject> collectibleObjects = new List<GameObject>();
-    [SerializeField] private Dictionary<GameObject, ObjectRules> destroyedObjects = new Dictionary<GameObject, ObjectRules>();
-    [SerializeField] private Transform finalCameraAngle;
-    [SerializeField] private Vector2 min;
-    [SerializeField] private Vector2 max;
     [SerializeField] private string levelName;
+    [SerializeField] private List<string> selectableTileStrings = new List<string>();
+    [SerializeField] private List<string> walkableTileStrings = new List<string>();
+    [SerializeField] private Transform finalCameraAngle;
+    [SerializeField] private TilePoint bitVaultLocation;
+    
+    [SerializeField, HideInInspector] private GameObject hero;
+    [SerializeField, HideInInspector] private List<GameObject> walkableTiles = new List<GameObject>();
+    [SerializeField, HideInInspector] private List<GameObject> blockedTiles = new List<GameObject>();
+    [SerializeField, HideInInspector] private List<GameObject> pushingTiles = new List<GameObject>();
+    [SerializeField, HideInInspector] private HashSet<GameObject> jumpableObjects = new HashSet<GameObject>();
+    [SerializeField, HideInInspector] private List<GameObject> selectableObjects = new List<GameObject>();
+    [SerializeField, HideInInspector] private HashSet<GameObject> linkableObjects = new HashSet<GameObject>();
+    [SerializeField, HideInInspector] private List<GameObject> collectibleObjects = new List<GameObject>();
+    [SerializeField, HideInInspector] private Dictionary<GameObject, ObjectRules> destroyedObjects = new Dictionary<GameObject, ObjectRules>();
+    [SerializeField, HideInInspector] private Vector2 min;
+    [SerializeField, HideInInspector] private Vector2 max;
     
     [SerializeField] private List<MovementOptionRule> movementOptionRules = new List<MovementOptionRule>();
     [SerializeField] private List<MovementRestrictionRule> movementRestrictionRules = new List<MovementRestrictionRule>();
@@ -62,12 +64,12 @@ public class CurrentLevelMap : ScriptableObject
     public void AddMovementOptionRule(MovementOptionRule optionRule) => movementOptionRules.Add(optionRule);
     public void AddMovementRestrictionRule(MovementRestrictionRule restrictionRule) => movementRestrictionRules.Add(restrictionRule);
 
-    public void RegisterAsSelectable(GameObject obj) => selectableObjects.Add(obj);
+    public void RegisterAsSelectable(GameObject obj) => UpdateReadOnlyAfter(() => selectableObjects.Add(obj));
     public void RegisterAsJumpable(GameObject obj) => jumpableObjects.Add(obj);
     public void RegisterAsLinkable(GameObject obj) => linkableObjects.Add(obj);
 
     public void RegisterBitVault(GameObject obj) => bitVaultLocation = new TilePoint(obj);
-    public void RegisterWalkableTile(GameObject obj) => UpdateSize(() => walkableTiles.Add(obj));
+    public void RegisterWalkableTile(GameObject obj) => UpdateReadOnlyAfter(() => UpdateSize(() => walkableTiles.Add(obj)));
     public void RegisterBlockingObject(GameObject obj) => UpdateSize(() => blockedTiles.Add(obj));
     public void RegisterPushingTile(GameObject obj) => UpdateSize(() => pushingTiles.Add(obj));
     public void RegisterAsCollectible(GameObject obj) => collectibleObjects.Add(obj);
@@ -209,10 +211,22 @@ public class CurrentLevelMap : ScriptableObject
 
     private void Notify(Action a)
     {
-        a();
+        UpdateReadOnlyAfter(a);
         Message.Publish(new LevelStateChanged());
     }
 
+    private void UpdateReadOnlyAfter(Action a)
+    {
+        a();
+        UpdateReadOnly();
+    }
+    
+    private void UpdateReadOnly()
+    {
+        selectableTileStrings = selectableObjects.Select(g => new TilePoint(g).ToString()).ToList();
+        walkableTileStrings = walkableTiles.Select(t => new TilePoint(t).ToString()).ToList();
+    }
+    
     private class ObjectRules
     {
         public bool IsWalkable { get; set; }

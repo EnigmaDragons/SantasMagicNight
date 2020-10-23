@@ -14,7 +14,7 @@ public class TilePoint
         : this(o.transform.localPosition) {}
     
     public TilePoint(Vector3 v)
-        : this(v.x.FlooredInt(), v.y.FlooredInt()) {}
+        : this(Convert.ToInt32(Math.Round(v.x)), Convert.ToInt32(Math.Round(v.y))) {}
     
     public TilePoint(int x, int y)
     {

@@ -103,7 +103,8 @@ GameObject:
   - component: {fileID: 8579176303583276764}
   - component: {fileID: 3788186967784306874}
   - component: {fileID: 3876428122281739413}
-  m_Layer: 0
+  - component: {fileID: 8228509827712123010}
+  m_Layer: 8
   m_Name: G_PlainWalkableTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,3 +152,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.1}
   m_Center: {x: 0.5, y: 0.5, z: 0}
+--- !u!114 &8228509827712123010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908376510870898287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5559ee4fda4947bca6553cf72df65a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debuggingEnabled:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: dd82648700ee2ff4c91f9c06caeccc34, type: 2}
+  target: {fileID: 1774640598785639203}
