@@ -3,7 +3,7 @@
 public class SantaCommandHandler : OnMessage<RetryLevel, GoToNextLevel>
 {
     [SerializeField] private SantaNavigator navigator;
-    [SerializeField] private GameLevels levels;
+    [SerializeField] private CurrentZone levels;
     [SerializeField] private CurrentLevel currentLevel;
     [SerializeField] private SaveStorage saveStorage;
     [SerializeField] private StarCounter counter;
@@ -18,10 +18,11 @@ public class SantaCommandHandler : OnMessage<RetryLevel, GoToNextLevel>
     {
         var nextLevelNumber = currentLevel.LevelNumber + 1;
         saveStorage.SaveStars(currentLevel.ActiveLevel, counter.NumStars);
-        
-        if (levels.Value.Length > nextLevelNumber)
+
+        var currentZone = levels.Zone;
+        if (currentZone.Value.Length > nextLevelNumber)
         {
-            currentLevel.SelectLevel(levels.Value[nextLevelNumber], 0, nextLevelNumber);
+            currentLevel.SelectLevel(currentZone.Value[nextLevelNumber], 0, nextLevelNumber);
             navigator.NavigateToGameScene();
         }
         else

@@ -1788,6 +1788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0147b87f704fdea1d2cab2beb4d5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delaySeconds: 6.5
   action:
     m_PersistentCalls:
       m_Calls:
@@ -1802,7 +1803,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  delaySeconds: 6.5
 --- !u!114 &2306790181840179061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3209,6 +3209,7 @@ MonoBehaviour:
   level: {fileID: 11400000, guid: f81c10460cdb9464397ed5864a15114b, type: 2}
   buttonPrototype: {fileID: 2959590771949307406, guid: bed567c1ae42d0946ae3a7458a321f57,
     type: 3}
+  currentZone: {fileID: 11400000, guid: e8fc69fe1d2656a4c8f02b9da95abb99, type: 2}
   parent: {fileID: 8445651016657080617}
 --- !u!1 &8445651016657080617
 GameObject:

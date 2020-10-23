@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   campaignName: Santa's Magic Night
   value:
-  - {fileID: 11400000, guid: 2398134ce8ebdb84f8919d1ab64a5310, type: 2}
-  - {fileID: 11400000, guid: e12c167e09cd57d40ba118df98a811cc, type: 2}
+  - {fileID: 11400000, guid: b736078aab4619c44aaa96b2086fab2b, type: 2}

@@ -39,9 +39,9 @@ public class MovingPiece : MonoBehaviour
             _t = 0;
             var newFacing = Facing.Up;
             if (msg.Delta.Y > 0)
-                newFacing = Facing.Right;
-            if (msg.Delta.Y < 0)
                 newFacing = Facing.Left;
+            if (msg.Delta.Y < 0)
+                newFacing = Facing.Right;
             if (msg.Delta.X > 0)
                 newFacing = Facing.Up;
             if (msg.Delta.X < 0)

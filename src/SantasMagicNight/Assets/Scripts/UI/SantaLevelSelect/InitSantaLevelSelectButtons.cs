@@ -6,6 +6,7 @@ public class InitSantaLevelSelectButtons : MonoBehaviour
     [SerializeField] private SantaNavigator navigator;
     [SerializeField] private CurrentLevel level;
     [SerializeField] private TextCommandButton buttonPrototype;
+    [SerializeField] private CurrentZone currentZone;
     [SerializeField] private GameObject parent;
 
     private int _zone = 0;
@@ -14,6 +15,10 @@ public class InitSantaLevelSelectButtons : MonoBehaviour
     {
         foreach(Transform t in parent.transform)
             Destroy(t.gameObject);
+        
+        if (currentZone.Campaign != campaign)
+            currentZone.Init(campaign);
+        
         var zone = campaign.Value[_zone];
         for (var i = 0; i < zone.Value.Length; i++)
         {
