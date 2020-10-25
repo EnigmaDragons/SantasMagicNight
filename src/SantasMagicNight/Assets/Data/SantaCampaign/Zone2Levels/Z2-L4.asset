@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82234f80e9d1f0a4bb25e6fd3de317db, type: 3}
-  m_Name: CurrentLevel
+  m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
+  m_Name: Z2-L4
   m_EditorClassIdentifier: 
-  selectedLevel: {fileID: 11400000, guid: e7a99bc4833f36b448afdfc20ffaf643, type: 2}
-  activeLevelPrefab: {fileID: 0}
-  currentZoneNum: 0
-  currentLevelNum: 2
-  enableDebugLogging: 0
+  guid: 46937d82-2152-409c-9012-4f956ff45b67
+  levelName: Mass Production
+  prefab: {fileID: 1032627380169697157, guid: d29a3e8ffe07aa346be1004c12a9766b, type: 3}
+  isTutorial: 0
