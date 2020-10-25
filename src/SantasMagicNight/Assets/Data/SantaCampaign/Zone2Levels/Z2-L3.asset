@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82234f80e9d1f0a4bb25e6fd3de317db, type: 3}
-  m_Name: CurrentLevel
+  m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
+  m_Name: Z2-L3
   m_EditorClassIdentifier: 
-  selectedLevel: {fileID: 11400000, guid: 964f0e7814dd42e4484057b4fdca0fad, type: 2}
-  activeLevelPrefab: {fileID: 0}
-  currentZoneNum: 0
-  currentLevelNum: 2
-  enableDebugLogging: 0
+  guid: 46937d82-2152-409c-9012-4f956ff45b67
+  levelName: Get Over Here
+  prefab: {fileID: 7212541672697440803, guid: f1d3b0d75bededf4cba3fd4f798edcc4, type: 3}
+  isTutorial: 0
