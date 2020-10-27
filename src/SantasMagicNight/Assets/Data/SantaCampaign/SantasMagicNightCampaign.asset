@@ -15,3 +15,4 @@ MonoBehaviour:
   campaignName: Santa's Magic Night
   value:
   - {fileID: 11400000, guid: b736078aab4619c44aaa96b2086fab2b, type: 2}
+  - {fileID: 11400000, guid: eeb35c62d4a69524e96e878f1d37ca80, type: 2}

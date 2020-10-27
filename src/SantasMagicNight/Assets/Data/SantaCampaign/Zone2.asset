@@ -10,18 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb28f5554541405a851d36bf065a598d, type: 3}
-  m_Name: Zone1
+  m_Name: Zone2
   m_EditorClassIdentifier: 
   value:
-  - {fileID: 11400000, guid: a86ef6cdcd4600e4daed390c0e8e54ef, type: 2}
-  - {fileID: 11400000, guid: 4f28a4aab04694444b35d3ea02946eb4, type: 2}
-  - {fileID: 11400000, guid: 770e8ea8b0a715c468cbf30fad9fffd3, type: 2}
-  - {fileID: 11400000, guid: ab5150d67a60cd9419664b09e4f197d0, type: 2}
-  - {fileID: 11400000, guid: bd615f8e3566d9c4eb60516f5348ec95, type: 2}
-  - {fileID: 11400000, guid: 268420b9e3211834d88b4f447517cc3b, type: 2}
-  - {fileID: 11400000, guid: 03758a91ddc592147b526c1f2599980b, type: 2}
-  - {fileID: 11400000, guid: 9b17139ad1e5b87428dc377f8aae1434, type: 2}
-  - {fileID: 11400000, guid: fcf74d1b30372fc47aa0587b2adbee90, type: 2}
+  - {fileID: 11400000, guid: ed9adf943bb9f554386dd20724e826c4, type: 2}
+  - {fileID: 11400000, guid: 655ace444a3f0cb459ab52a90087a0ba, type: 2}
+  - {fileID: 11400000, guid: 964f0e7814dd42e4484057b4fdca0fad, type: 2}
+  - {fileID: 11400000, guid: e7a99bc4833f36b448afdfc20ffaf643, type: 2}
   starsRequired:
     UseConstant: 1
     ConstantValue: 0
