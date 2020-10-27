@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3789605160213856766}
   - component: {fileID: 7992325447155773000}
   - component: {fileID: 4076195978444526032}
+  - component: {fileID: 3599776859113342378}
   m_Layer: 0
   m_Name: G_GingerbreadMan
   m_TagString: Untagged
@@ -145,8 +146,26 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: afafc3740f3294e4db921ee7832950a2, type: 3}
     volume:
       UseConstant: 1
-      ConstantValue: 0
+      ConstantValue: 0.7
       FloatVariable: {fileID: 0}
+--- !u!114 &3599776859113342378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027933191626250430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee9d6d1dfd94f198ce7749ccd91dabb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 6972183854207016116}
+  clip: {fileID: 8300000, guid: 70d22411161ee4a4281b998e91950d95, type: 3}
+  volume:
+    UseConstant: 1
+    ConstantValue: 0.8
+    FloatVariable: {fileID: 0}
 --- !u!1 &6033031051216966848
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +271,7 @@ GameObject:
   - component: {fileID: 1080914812586968653}
   - component: {fileID: 6736309184830875993}
   - component: {fileID: 6035081455402646307}
+  - component: {fileID: 6972183854207016116}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -301,6 +321,103 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 45
   direction: {x: 0, y: 0, z: 1}
+--- !u!82 &6972183854207016116
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6351448188737039723}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 434988255020413896, guid: 44d15a14bea7a214eb3bc3739c813508,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0.21
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7344237089399597391
 GameObject:
   m_ObjectHideFlags: 0
