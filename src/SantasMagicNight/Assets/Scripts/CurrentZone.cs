@@ -20,7 +20,7 @@ public class CurrentZone : ScriptableObject
         zone = zones.Value[zoneIndex];
         onCurrentZoneChanged.Publish();
     }
-
+    
     public void Init(Campaign campaign)
     {
         Debug.Log($"Selected {campaign.Name} Campaign");
