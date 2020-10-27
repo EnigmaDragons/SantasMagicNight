@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4277278199581629505}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 0.49999988, z: -1.24}
+  m_LocalPosition: {x: 0.5, y: -0.5, z: -1.24}
   m_LocalScale: {x: 0.18, y: 0.17999999, z: 0.17999999}
   m_Children: []
   m_Father: {fileID: 6148523672268995337}
@@ -195,8 +195,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6148523672268995337}
+  - component: {fileID: 602550363665833502}
   m_Layer: 0
-  m_Name: C_HouseTile2
+  m_Name: S_HouseTile2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,6 +220,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &602550363665833502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5181781495909311947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdf38d05b4241a453769162837f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
 --- !u!1001 &5412541916351361055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -234,7 +248,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0154c44e41bfc7d4fa7496d47a8bf97a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0154c44e41bfc7d4fa7496d47a8bf97a,
         type: 3}
