@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7671125721170828994}
   - component: {fileID: 439044546742363647}
   - component: {fileID: 2959590771949307406}
+  - component: {fileID: 2405909756645214852}
   m_Layer: 0
   m_Name: SantaLevelButton
   m_TagString: Untagged
@@ -133,6 +134,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 2183956473160236039}
+--- !u!114 &2405909756645214852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449457969102196780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: c3ed8ab0c18bc854eb8ebae6e7fb42e4, type: 3}
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &6510574075366046537
 GameObject:
   m_ObjectHideFlags: 0

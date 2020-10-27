@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 2306790181089889602}
   - component: {fileID: 2306790181089889613}
   - component: {fileID: 2306790181089889612}
+  - component: {fileID: 868143637275562064}
   m_Layer: 5
   m_Name: OptionsButton
   m_TagString: Untagged
@@ -236,6 +237,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &868143637275562064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306790181089889614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 3cb2defa2ecff8a4989af42d02da4047, type: 3}
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &2306790181331390762
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +829,7 @@ GameObject:
   - component: {fileID: 2306790182451247553}
   - component: {fileID: 2306790182451247552}
   - component: {fileID: 2306790182451247555}
+  - component: {fileID: 7252081821367129631}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -921,6 +937,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7252081821367129631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306790182451247565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: c3ed8ab0c18bc854eb8ebae6e7fb42e4, type: 3}
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &2530080127819325336
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +963,7 @@ GameObject:
   - component: {fileID: 5327554612353736395}
   - component: {fileID: 8428776163206368117}
   - component: {fileID: 8708578960552886138}
-  - component: {fileID: 1030820054737682047}
+  - component: {fileID: 7035205826661764099}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1040,7 +1070,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1030820054737682047
+--- !u!114 &7035205826661764099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1049,10 +1079,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2530080127819325336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ec2b0427b43c085134e40cb7983d5, type: 3}
+  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2530080127819325336}
+  sound: {fileID: 8300000, guid: 4c2f2037b0c223342a4ab6eec9a3764b, type: 3}
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &3100945946950893257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1332,7 @@ GameObject:
   - component: {fileID: 6467026978686260776}
   - component: {fileID: 4411385344356503925}
   - component: {fileID: 274942577480571797}
+  - component: {fileID: 3780331706872873760}
   m_Layer: 0
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -1407,6 +1439,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3780331706872873760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382569259660597760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: ac9d792123dca104dbff734de1ee85fd, type: 3}
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &3929001088216842864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1465,7 @@ GameObject:
   - component: {fileID: 7389210414415264603}
   - component: {fileID: 9042890450289198899}
   - component: {fileID: 3715346533988169397}
+  - component: {fileID: 8031013750578169577}
   m_Layer: 0
   m_Name: NextButton
   m_TagString: Untagged
@@ -1525,6 +1572,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8031013750578169577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3929001088216842864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: ac9d792123dca104dbff734de1ee85fd, type: 3}
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &5329800068991196338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,10 +3050,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2306790181840179063}
     m_Modifications:
+    - target: {fileID: 5846094309846294467, guid: 8e7e5086e96c308429cfc5e844077295,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846094309935392208, guid: 8e7e5086e96c308429cfc5e844077295,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846094310603917285, guid: 8e7e5086e96c308429cfc5e844077295,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846094311369228741, guid: 8e7e5086e96c308429cfc5e844077295,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5846094311526338702, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846094311526338702, guid: 8e7e5086e96c308429cfc5e844077295,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5846094311526338703, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
