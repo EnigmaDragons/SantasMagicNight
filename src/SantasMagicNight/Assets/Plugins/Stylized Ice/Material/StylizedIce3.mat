@@ -124,9 +124,9 @@ Material:
     - _BumpOffset: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0, g: 0.33962262, b: 0.28163823, a: 1}
+    - _MainColor: {r: 0.20714669, g: 0.44100434, b: 0.46226418, a: 1}
     - _SnowColor: {r: 1, g: 1, b: 1, a: 1}
     - _SnowDir: {r: 0, g: 1, b: 0, a: 1}
     - _SpecColor: {r: 0.08363971, g: 0.35417095, b: 0.6691177, a: 1}
-    - _SpecularColor: {r: 0.08363971, g: 0.35417095, b: 0.6691177, a: 1}
+    - _SpecularColor: {r: 0.05157528, g: 0.29256764, b: 0.5754717, a: 1}
     - _lightParams: {r: 1.5, g: 0.4, b: 0, a: 0}
