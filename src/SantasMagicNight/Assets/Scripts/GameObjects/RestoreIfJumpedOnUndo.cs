@@ -13,10 +13,7 @@ public sealed class RestoreIfJumpedOnUndo : OnMessage<UndoPieceMoved, ObjectDest
 
         var obj = _damagedObjects.Peek();
 
-        Debug.Log("Undo Object: " + obj.name);
-        Debug.Log("Undo Piece: " + msg.Piece);
-        Debug.Log("To: " + msg.To);
-        Debug.Log("From: " + msg.From);
+        Debug.Log($"Undo Move: {msg}");
 
         var destroyIfJumpedComponent = obj.GetComponent<DestroyIfJumped>();
         if (destroyIfJumpedComponent != null)

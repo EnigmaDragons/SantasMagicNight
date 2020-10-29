@@ -18,4 +18,6 @@ public sealed class UndoPieceMoved
                                                                                            && (To.X == From.X || To.Y == From.Y);
 
     public bool HadSteppedOn(GameObject other) => (To.IsAdjacentTo(From));
+
+    public override string ToString() => $"{Piece.name} - From {From} - To {To}";
 }

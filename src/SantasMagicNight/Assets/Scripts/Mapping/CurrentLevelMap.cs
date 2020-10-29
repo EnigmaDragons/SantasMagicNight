@@ -35,6 +35,7 @@ public class CurrentLevelMap : ScriptableObject
     public IEnumerable<MovementOptionRule> MovementOptionRules => movementOptionRules;
     public IEnumerable<MovementRestrictionRule> MovementRestrictionRules => movementRestrictionRules;
     public IEnumerable<GameObject> Selectables => selectableObjects;
+    public IEnumerable<GameObject> LinkableObjects => linkableObjects;
     public int NumOfJumpables => jumpableObjects.Count;
     public Transform FinalCameraAngle => finalCameraAngle;
 

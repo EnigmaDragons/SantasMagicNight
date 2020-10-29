@@ -54,8 +54,8 @@ public class MovingPiece : MonoBehaviour
     {
         if (shouldRotate)
         {
-            var rotationAmount = (int) _facing - (int) facing;
-            Debug.Log($"{name} Facing {facing}");
+            //var rotationAmount = (int) _facing - (int) facing;
+            //Debug.Log($"{name} Facing {facing}");
             var newRotationVector = new Vector3(0, 0, (int)facing);
             _facing = facing;
 
