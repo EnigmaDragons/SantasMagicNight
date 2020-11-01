@@ -21,6 +21,7 @@ public sealed class MoveHistoryProcessor : MonoBehaviour
         if (map.IsPushing(msg.From))
             return;
         history.FinishTurn();
+        Message.Publish(new TurnMovementFinished());
     }
 
     private void OnDisable()

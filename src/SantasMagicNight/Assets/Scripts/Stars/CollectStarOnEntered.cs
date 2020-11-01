@@ -17,5 +17,9 @@ public sealed class CollectStarOnEntered : OnMessage<PieceMoved>
         Message.Publish(new ObjectDestroyed(gameObject));
     }
 
-    public void Revert() => gameObject.SetActive(true);
+    public void Revert()
+    {
+        Debug.Log("Revert Gift");
+        gameObject.SetActive(true);
+    }
 }
