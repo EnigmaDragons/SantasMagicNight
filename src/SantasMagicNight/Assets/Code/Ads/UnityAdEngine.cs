@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public sealed class UnityAdEngine : OnMessage<ShowInterstitialAd, ShowBannerAd>
+public sealed class UnityAdEngine : OnMessage<ShowInterstitialAd, ShowBannerAd, HideBannerAd>
 {
     [SerializeField] private FloatReference adEngineTimeoutSeconds;
 
@@ -17,6 +17,12 @@ public sealed class UnityAdEngine : OnMessage<ShowInterstitialAd, ShowBannerAd>
             () => Advertisement.IsReady(msg.PlacementId), 
             () => Advertisement.Banner.Show(msg.PlacementId)));
 
+    protected override void Execute(HideBannerAd msg)
+    {
+        Debug.Log("Ads - Hide Banner Ad requested");
+        Advertisement.Banner.Hide();
+    }
+
     private IEnumerator ShowWhenReady(Func<bool> isReady, Action action)
     {
         var elapsed = 0f;
@@ -27,7 +33,7 @@ public sealed class UnityAdEngine : OnMessage<ShowInterstitialAd, ShowBannerAd>
         }
 
         if (elapsed >= adEngineTimeoutSeconds)
-            Debug.LogWarning("Unity Ad Engine is not ready.");
+            Debug.LogWarning("Ads - Unity Ad Engine is not ready.");
         else
             action();
     }
