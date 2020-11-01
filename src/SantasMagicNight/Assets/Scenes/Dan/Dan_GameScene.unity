@@ -20456,6 +20456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   history: {fileID: 11400000, guid: 95f27b9e96dd64443a8255b0eda723b2, type: 2}
+  map: {fileID: 0}
 --- !u!224 &6811342845316167790
 RectTransform:
   m_ObjectHideFlags: 0
