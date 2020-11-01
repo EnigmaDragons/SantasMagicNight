@@ -2150,6 +2150,8 @@ GameObject:
   - component: {fileID: 6990096200828236874}
   - component: {fileID: 3457899071935045610}
   - component: {fileID: 1378470044368786667}
+  - component: {fileID: 508976949077288407}
+  - component: {fileID: 1748877287185641271}
   m_Layer: 0
   m_Name: G_Santa
   m_TagString: Untagged
@@ -2413,6 +2415,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indicator: {fileID: 9102682390887102441}
+--- !u!114 &508976949077288407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8501044244205403645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3af31409325874478b0db16b93688dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _secondsToZoom: 2
+  _offset: {x: -1.4, y: 4.2, z: 0}
+--- !u!114 &1748877287185641271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8501044244205403645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d47cbf2aa949c2bd4581b5a5382d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 9102682390887102441}
 --- !u!1 &8526366037054765769
 GameObject:
   m_ObjectHideFlags: 0
