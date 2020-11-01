@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82234f80e9d1f0a4bb25e6fd3de317db, type: 3}
-  m_Name: CurrentLevel
+  m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
+  m_Name: Z2-L9
   m_EditorClassIdentifier: 
-  selectedLevel: {fileID: 11400000, guid: 0c57e63702310a54e872aeaf6b1ec93f, type: 2}
-  activeLevelPrefab: {fileID: 0}
-  currentZoneNum: 1
-  currentLevelNum: 0
-  enableDebugLogging: 0
+  guid: 46937d82-2152-409c-9012-4f956ff45b67
+  levelName: A-maze-ing
+  prefab: {fileID: 6564804779164329686, guid: af4a02f022122c94cb491b86816798f2, type: 3}
+  isTutorial: 0
