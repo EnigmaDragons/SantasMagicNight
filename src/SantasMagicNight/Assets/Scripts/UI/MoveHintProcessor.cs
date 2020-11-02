@@ -61,7 +61,7 @@ public class MoveHintProcessor : OnMessage<TurnMovementFinished, PieceMovementSt
                     return false;
 
                 var typedMoves = possibleMoveTypes.Select(p => new MovementProposed(p, obj, sourceTile, tile));
-                return map.MovementRestrictions.Any(r => typedMoves.Any(r.IsValid));
+                return typedMoves.Any(t => map.MovementRestrictions.All(r => r.IsValid(t)));
             })
             .Distinct()
             .ToArray();

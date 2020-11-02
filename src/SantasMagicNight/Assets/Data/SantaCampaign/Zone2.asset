@@ -17,6 +17,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 655ace444a3f0cb459ab52a90087a0ba, type: 2}
   - {fileID: 11400000, guid: 964f0e7814dd42e4484057b4fdca0fad, type: 2}
   - {fileID: 11400000, guid: e7a99bc4833f36b448afdfc20ffaf643, type: 2}
+  - {fileID: 11400000, guid: 66f7e0101760e9248965474f875c3528, type: 2}
+  - {fileID: 11400000, guid: 477d32118b0ab934399e69ab2feb1c8a, type: 2}
+  - {fileID: 11400000, guid: e3417749e94aa0a4fb1d7edcd02b285c, type: 2}
+  - {fileID: 11400000, guid: 356b5dd35f35ef140964f85a00b31644, type: 2}
+  - {fileID: 11400000, guid: 0c57e63702310a54e872aeaf6b1ec93f, type: 2}
   starsRequired:
     UseConstant: 1
     ConstantValue: 0

@@ -23,6 +23,10 @@ public class InitSantaLevelSelectButtons : MonoBehaviour
         
         previousButton.onClick.AddListener(MovePrevious);
         nextButton.onClick.AddListener(MoveNext);
+    }
+
+    private void OnEnable()
+    {
         UpdateUi();
     }
 

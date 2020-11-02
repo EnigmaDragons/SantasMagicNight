@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uid: 76ad1473-a3c6-481e-809f-dba8c27d3ff8
   levelName: What do I do now?
-  prefab: {fileID: 7984032035898209172, guid: 550543277cbe499489a921c1c19bb468, type: 3}
+  prefab: {fileID: 3691233226652013528, guid: 539d05a87b5250e4abc18d7da32e913c, type: 3}
   isTutorial: 0
