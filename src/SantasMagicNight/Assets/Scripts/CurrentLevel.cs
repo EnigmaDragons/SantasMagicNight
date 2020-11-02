@@ -11,6 +11,7 @@ public class CurrentLevel : ScriptableObject
     public GameLevel ActiveLevel => selectedLevel;
     public int ZoneNumber => currentZoneNum;
     public int LevelNumber => currentLevelNum;
+    public Transform Transform => activeLevelPrefab.transform;
 
     public void SelectLevel(GameLevel level, int zoneNum, int levelNum)
     {

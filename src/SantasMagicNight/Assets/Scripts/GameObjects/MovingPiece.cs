@@ -22,7 +22,6 @@ public class MovingPiece : MonoBehaviour
         if (msg.Piece == gameObject)
         {
             transform.localPosition = new Vector3(msg.From.X, msg.From.Y, transform.localPosition.z);
-            Message.Publish(new PieceDeselected());
             Message.Publish(new PieceSelected(gameObject));
         }
     }
@@ -32,6 +31,7 @@ public class MovingPiece : MonoBehaviour
         if (msg.Piece == gameObject)
         {
             _moving = true;
+            Message.Publish(new PieceMovementStarted());
             _msg = msg;
             gameInputActive.Lock(gameObject);
             _start = new Vector3(msg.From.X, msg.From.Y, transform.localPosition.z);
@@ -75,6 +75,7 @@ public class MovingPiece : MonoBehaviour
                 map.Move(_msg.Piece, _msg.From, _msg.To);
                 gameInputActive.Unlock(gameObject);
                 _moving = false;
+                Message.Publish(new PieceMovementFinished());
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -36,6 +37,9 @@ public class CurrentLevelMap : ScriptableObject
     public IEnumerable<MovementRestrictionRule> MovementRestrictionRules => movementRestrictionRules;
     public IEnumerable<GameObject> Selectables => selectableObjects;
     public IEnumerable<GameObject> LinkableObjects => linkableObjects;
+    public IEnumerable<GameObject> Walkables => walkableTiles;
+    public IEnumerable<MovementOptionRule> MovementOptions => movementOptionRules;
+    public IEnumerable<MovementRestrictionRule> MovementRestrictions => movementRestrictionRules;
     public int NumOfJumpables => jumpableObjects.Count;
     public Transform FinalCameraAngle => finalCameraAngle;
 
