@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: DX-WhereTheHousesLookAlike
   m_EditorClassIdentifier: 
-  guid: 6f5c3f13-2434-4c5c-88d8-1054baca5b6b
+  uid: 3a58195b-d471-48b8-b764-405205c25949
   levelName: Where the Houses Look Alike
   prefab: {fileID: 33725747937640581, guid: 9ecc5086cfb4e55458a1642abcdabf73, type: 3}
   isTutorial: 0

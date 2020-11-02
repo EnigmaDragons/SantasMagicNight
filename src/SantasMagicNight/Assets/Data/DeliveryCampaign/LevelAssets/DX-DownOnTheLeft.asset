@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: DX-DownOnTheLeft
   m_EditorClassIdentifier: 
-  guid: 4f7ca0d0-f5dd-4229-96f6-3e4207f6072a
+  uid: 93223263-8229-41e7-9632-894c267a521e
   levelName: Down On The Left
   prefab: {fileID: 6168821735686768106, guid: 56907941f42fdda47b68fa186aadc62b, type: 3}
   isTutorial: 0

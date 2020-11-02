@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameLevel : ScriptableObject
 {
-    [ReadOnly, SerializeField] private string guid = Guid.NewGuid().ToString();
+    [ReadOnly, SerializeField] private string uid = Guid.NewGuid().ToString();
     [SerializeField] private string levelName;
     [SerializeField] private GameObject prefab;
     [SerializeField] private bool isTutorial = false;
@@ -12,5 +12,5 @@ public class GameLevel : ScriptableObject
     public string Name => levelName;
     public GameObject Prefab => prefab;
     public bool IsTutorial => isTutorial;
-    public string Id => guid;
+    public string Id => uid;
 }

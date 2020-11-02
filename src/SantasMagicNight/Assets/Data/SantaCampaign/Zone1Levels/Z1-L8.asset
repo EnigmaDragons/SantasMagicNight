@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: Z1-L8
   m_EditorClassIdentifier: 
-  guid: 46937d82-2152-409c-9012-4f956ff45b67
+  uid: 7616cfa2-3000-4f68-8e52-8632fef67912
   levelName: Don't take the easy way out
   prefab: {fileID: 4750487247434102495, guid: a9ea0860f397ca045a5f87adab57aced, type: 3}
   isTutorial: 0

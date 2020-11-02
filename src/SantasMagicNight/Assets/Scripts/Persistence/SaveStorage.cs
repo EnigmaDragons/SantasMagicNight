@@ -106,22 +106,4 @@ public class SaveStorage : ScriptableObject
 
     public bool GetAutoSkipStory() => _store.GetOrDefault(_autoSkipStory, false);
     public void SetAutoSkipStory(bool active) => _store.Put(_autoSkipStory, active);
-
-    // Hints
-    private const string _useHints = "UseHints";
-    private const string _hintPoints = "HintPoints";
-    private const string _dailyBonusDate = "DailyBonusDate";
-    private const string _minutesTilHintBonus = "MinutesTilHintBonus";
-    private string HintsKey(GameLevel level) => $"{level.Name}Hints";
-    public int GetHints(GameLevel level) => _store.GetOrDefault(HintsKey(level), 0);
-    public void AddHintToLevel(GameLevel level) => _store.Put(HintsKey(level), GetHints(level) + 1);
-    public void ClearHints(GameLevel level) => _store.Put(HintsKey(level), 0);
-    public bool GetUseHints() => _store.GetOrDefault(_useHints, true);
-    public void SetUseHints(bool active) => _store.Put(_useHints, active);
-    public int GetHintPoints() => _store.GetOrDefault(_hintPoints, 0);
-    public void SetHintPoints(int hintPoints) => _store.Put(_hintPoints, hintPoints);
-    public bool HasDailyBonusBeenGiven() => _store.GetOrDefault(_dailyBonusDate, -1) == DateTime.Today.DayOfYear;
-    public void GiveDailyBonus() => _store.Put(_dailyBonusDate, DateTime.Today.DayOfYear);
-    public int MinutesTilNextHintBonus() => _store.GetOrDefault(_minutesTilHintBonus, 0);
-    public void SetMinutesTilNextHintBonus(int minutes) => _store.Put(_minutesTilHintBonus, minutes);
 }
