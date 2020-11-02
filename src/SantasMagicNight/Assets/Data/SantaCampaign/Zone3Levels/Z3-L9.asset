@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Z3-L9
   m_EditorClassIdentifier: 
   guid: 46937d82-2152-409c-9012-4f956ff45b67
-  levelName: Z2L9
+  levelName: A-maze-ing 2
   prefab: {fileID: 2268587920027650732, guid: 5df26c0b59a041d46a753a2388a2bd26, type: 3}
   isTutorial: 0
