@@ -1562,6 +1562,8 @@ MonoBehaviour:
   prototype: {fileID: 8719306067509654750, guid: 0920808e394a43142bcbc04d43f4256e,
     type: 3}
   parent: {fileID: 313619041}
+  currentLevel: {fileID: 11400000, guid: f81c10460cdb9464397ed5864a15114b, type: 2}
+  storage: {fileID: 11400000, guid: 1458f9b8798b4f147b62b7883c2ba217, type: 2}
   initialDelay:
     UseConstant: 1
     ConstantValue: 1.6
@@ -5287,8 +5289,6 @@ GameObject:
   - component: {fileID: 5720502337223247500}
   - component: {fileID: 7240880957148897496}
   - component: {fileID: 1209843439448744242}
-  - component: {fileID: 1726158245914164063}
-  - component: {fileID: 3817323801506588619}
   - component: {fileID: 5097479852497357279}
   - component: {fileID: 8341854914154113096}
   - component: {fileID: 7662557029633845171}
@@ -5312,6 +5312,7 @@ GameObject:
   - component: {fileID: 6565902819926648016}
   - component: {fileID: 7089870335177044603}
   - component: {fileID: 1002427108554111992}
+  - component: {fileID: 1002427108554111993}
   m_Layer: 0
   m_Name: KeyboardControls
   m_TagString: Untagged
@@ -5337,6 +5338,34 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: ad46ee6c8ee26e5438a93f9809839dd7, type: 2}
         m_MethodName: NavigateToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  alternateKeys: 
+--- !u!114 &1002427108554111993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002427108554111991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d642554f8e774700924def0280669fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 27
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b665849b2c0cd1447a7a051de025a5bf, type: 2}
+        m_MethodName: ShowOptionsMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5534,20 +5563,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stars: {fileID: 11400000, guid: 2ae4308fec58df94b863c1ed4ec4dc3a, type: 2}
---- !u!114 &1726158245914164063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980168535539443204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb895739cfcb45b08cd445c11be39d28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  additionalTargets: []
 --- !u!114 &1740726784756076235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5678,34 +5693,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3817323801506588619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980168535539443204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d642554f8e774700924def0280669fb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 27
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1726158245914164063}
-        m_MethodName: Toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  alternateKeys: 
 --- !u!224 &3832323168635121510
 RectTransform:
   m_ObjectHideFlags: 0

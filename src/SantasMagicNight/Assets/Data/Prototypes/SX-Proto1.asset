@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: SX-Proto1
   m_EditorClassIdentifier: 
-  guid: a43e40d5-19e5-424e-bce4-741aadd15c70
+  uid: a718e72c-f7e2-4147-ad67-aaef04537f9a
   levelName: Proto 1
   prefab: {fileID: 8813486795491439964, guid: 511b03bdfb21ea345acf15db3548e4ee, type: 3}
   isTutorial: 0

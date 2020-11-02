@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: D2-DeliveringAllDayLong
   m_EditorClassIdentifier: 
-  guid: 28830fb6-9863-4f38-b536-dc5921603aae
+  uid: b4b03f03-262a-412d-aac5-d523b57745e9
   levelName: Delivering All Day Long
   prefab: {fileID: 6966284024420021440, guid: 48f462d29430db74b8ae1cbb7c80bddf, type: 3}
   isTutorial: 0

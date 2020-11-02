@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: Z1-L6
   m_EditorClassIdentifier: 
-  guid: 46937d82-2152-409c-9012-4f956ff45b67
+  uid: 8c54c0a6-4c0c-43f2-89d2-5c1629c8d860
   levelName: Around the naughty
   prefab: {fileID: 9007420384564634866, guid: bbbf11541650d8e4287f0734d7f05fd9, type: 3}
   isTutorial: 0

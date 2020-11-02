@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090681d0cad653b4ba4bd3c63f4beb4d, type: 3}
   m_Name: DX-Tutorial
   m_EditorClassIdentifier: 
-  guid: 9f7d31dd-249e-4bb8-bdd8-917aadb71e74
+  uid: 66424de3-95e7-4893-b5ea-57068e5cb401
   levelName: Tutorial
   prefab: {fileID: 3640930460817543310, guid: f9da5593bc37c684f8f824f09cc55e62, type: 3}
   isTutorial: 1

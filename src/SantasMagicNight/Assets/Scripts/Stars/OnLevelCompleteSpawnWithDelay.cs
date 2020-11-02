@@ -7,6 +7,8 @@ public sealed class OnLevelCompleteSpawnWithDelay : OnMessage<LevelCompleted>
     [SerializeField] private StarCounter counter;
     [SerializeField] private GameObject prototype;
     [SerializeField] private GameObject parent;
+    [SerializeField] private CurrentLevel currentLevel;
+    [SerializeField] private SaveStorage storage;
     [SerializeField] private FloatReference initialDelay = new FloatReference(1);
     [SerializeField] private FloatReference delayBetween = new FloatReference(0.4f);
 
@@ -20,5 +22,6 @@ public sealed class OnLevelCompleteSpawnWithDelay : OnMessage<LevelCompleted>
             Instantiate(prototype, parent.transform);
             yield return new WaitForSeconds(delayBetween);
         }
+        storage.SaveStars(currentLevel.ActiveLevel, counter.NumStars);
     }
 }

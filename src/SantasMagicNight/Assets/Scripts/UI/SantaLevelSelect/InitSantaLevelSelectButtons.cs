@@ -6,8 +6,9 @@ public class InitSantaLevelSelectButtons : MonoBehaviour
 {
     [SerializeField] private Campaign campaign;
     [SerializeField] private SantaNavigator navigator;
-    [SerializeField] private CurrentLevel level;
-    [SerializeField] private TextCommandButton buttonPrototype;
+    [SerializeField] private CurrentLevel currentLevel;
+    [SerializeField] private SantaLevelButton buttonPrototype;
+    [SerializeField] private SaveStorage storage;
     [SerializeField] private CurrentZone currentZone;
     [SerializeField] private GameObject parent;
     [SerializeField] private Button previousButton;
@@ -34,11 +35,17 @@ public class InitSantaLevelSelectButtons : MonoBehaviour
         for (var i = 0; i < zone.Value.Length; i++)
         {
             var currentIndex = i;
-            Instantiate(buttonPrototype, parent.transform).Init($"{_zone + 1} - {i + 1}", () => 
-            { 
-                level.SelectLevel(zone.Value[currentIndex], 0, currentIndex);
-                navigator.NavigateToGameScene();
-            });
+            var level = zone.Value[currentIndex];
+            var levelTitle = $"{_zone + 1} - {i + 1}";
+            var stars = storage.GetStars(level);
+            Instantiate(buttonPrototype, parent.transform).Init(
+               levelTitle, 
+                stars, 
+                () => 
+                { 
+                    currentLevel.SelectLevel(level, _zone, currentIndex);
+                    navigator.NavigateToGameScene();
+                });
         }
 
         previousButton.gameObject.SetActive(_zone > 0);
