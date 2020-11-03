@@ -1,0 +1,14 @@
+"appbuild"
+{
+	"appid" "1465630"
+	"desc" "Santa's Magic Night"
+	"buildoutput" "../steamoutput"
+	"contentroot" "../content"
+	"setlive" ""
+	"preview" "0"
+	"local"	""
+	"depots"
+	{
+		"1465631"	"main_depot.vdf"
+	}
+}
