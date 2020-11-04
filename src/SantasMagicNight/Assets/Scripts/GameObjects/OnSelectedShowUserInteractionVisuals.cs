@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 
+[Obsolete("Old BitVault approach to Hints")]
 public class OnSelectedShowUserInteractionVisuals : MonoBehaviour
 {
     [SerializeField] private GameObject[] options;

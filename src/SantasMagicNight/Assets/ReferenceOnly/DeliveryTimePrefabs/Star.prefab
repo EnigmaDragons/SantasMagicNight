@@ -62,10 +62,11 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 18c407da3d9ee8342bc3ddb8cf4255d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c5484c02117de3e41b702d663b0157fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
