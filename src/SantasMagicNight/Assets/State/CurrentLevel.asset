@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82234f80e9d1f0a4bb25e6fd3de317db, type: 3}
   m_Name: CurrentLevel
   m_EditorClassIdentifier: 
-  selectedLevel: {fileID: 11400000, guid: 66f7e0101760e9248965474f875c3528, type: 2}
+  selectedLevel: {fileID: 11400000, guid: 477d32118b0ab934399e69ab2feb1c8a, type: 2}
   activeLevelPrefab: {fileID: 0}
   currentZoneNum: 1
   currentLevelNum: 0
