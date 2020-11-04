@@ -5313,6 +5313,8 @@ GameObject:
   - component: {fileID: 7089870335177044603}
   - component: {fileID: 1002427108554111992}
   - component: {fileID: 1002427108554111993}
+  - component: {fileID: 1002427108554111995}
+  - component: {fileID: 1002427108554111994}
   m_Layer: 0
   m_Name: KeyboardControls
   m_TagString: Untagged
@@ -5366,6 +5368,51 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: b665849b2c0cd1447a7a051de025a5bf, type: 2}
         m_MethodName: ShowOptionsMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  alternateKeys: 
+--- !u!114 &1002427108554111994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002427108554111991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d9a764573c4bd2be91178053cc9b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: 1684fd8e52aa6064aac4668e1a3bc4cd, type: 2}
+  toggle: {fileID: 0}
+--- !u!114 &1002427108554111995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002427108554111991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d642554f8e774700924def0280669fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 103
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1002427108554111994}
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

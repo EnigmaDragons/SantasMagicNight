@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,4 +24,6 @@ public sealed class PlayerPrefBoolOption : MonoBehaviour
         PlayerPrefs.Save();
         Message.Publish(new PlayerPrefsChanged());
     }
+
+    public void Toggle() => Set(!IsEnabled);
 }
