@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226558255034018291}
   m_Layer: 0
-  m_Name: S1-Exterior
+  m_Name: Z2-Exterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
