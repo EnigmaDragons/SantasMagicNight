@@ -17,6 +17,7 @@ public sealed class InitUnityAdEngine : MonoBehaviour
             gameId = appleGameId;
         #endif
         
-        Advertisement.Initialize(gameId.Trim(), isTestMode);
+        if (!string.IsNullOrWhiteSpace(gameId))
+            Advertisement.Initialize(gameId.Trim(), isTestMode);
     }
 }

@@ -422,6 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5818548847129702227}
+  - component: {fileID: -2350050474408069052}
   m_Layer: 0
   m_Name: Z2-L7
   m_TagString: Untagged
@@ -449,6 +450,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &-2350050474408069052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5818548847129702226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367ea9b57733468781cb89fed5bafcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6257940140836172739
 GameObject:
   m_ObjectHideFlags: 0
