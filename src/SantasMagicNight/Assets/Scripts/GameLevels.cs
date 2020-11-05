@@ -15,7 +15,7 @@ public sealed class GameLevels : ScriptableObject
     [SerializeField] private Sprite logoTiled;
     [SerializeField] private Color logoColor;
     [SerializeField] private Color backgroundColor;
-    [SerializeField] private IntroloopAudio musicTheme;
+    [SerializeField] private AudioClip musicTheme;
     [SerializeField] private SaveStorage saveStorage;
     [SerializeField] private GameLevel tutorial;
     [SerializeField] private int[] progression;
@@ -29,7 +29,7 @@ public sealed class GameLevels : ScriptableObject
     public Sprite LogoTiled => logoTiled;
     public Color LogoColor => logoColor;
     public Color BackgroundColor => backgroundColor;
-    public IntroloopAudio MusicTheme => musicTheme;
+    public AudioClip MusicTheme => musicTheme;
     public Maybe<GameLevel> Tutorial => tutorial;
     public int[] Progression => progression;
 }

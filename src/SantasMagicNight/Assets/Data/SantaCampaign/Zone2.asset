@@ -34,7 +34,7 @@ MonoBehaviour:
   logoTiled: {fileID: 0}
   logoColor: {r: 0, g: 0, b: 0, a: 0}
   backgroundColor: {r: 0, g: 0, b: 0, a: 0}
-  musicTheme: {fileID: 0}
+  musicTheme: {fileID: 8300000, guid: 5b3434d95f93397429d077ff019f0e51, type: 3}
   saveStorage: {fileID: 0}
   tutorial: {fileID: 0}
   progression: 

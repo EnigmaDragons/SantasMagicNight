@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb28f5554541405a851d36bf065a598d, type: 3}
-  m_Name: Zone1
+  m_Name: Zone3
   m_EditorClassIdentifier: 
   value:
-  - {fileID: 11400000, guid: a86ef6cdcd4600e4daed390c0e8e54ef, type: 2}
-  - {fileID: 11400000, guid: 4f28a4aab04694444b35d3ea02946eb4, type: 2}
-  - {fileID: 11400000, guid: 770e8ea8b0a715c468cbf30fad9fffd3, type: 2}
-  - {fileID: 11400000, guid: ab5150d67a60cd9419664b09e4f197d0, type: 2}
-  - {fileID: 11400000, guid: bd615f8e3566d9c4eb60516f5348ec95, type: 2}
-  - {fileID: 11400000, guid: 268420b9e3211834d88b4f447517cc3b, type: 2}
-  - {fileID: 11400000, guid: 03758a91ddc592147b526c1f2599980b, type: 2}
-  - {fileID: 11400000, guid: 9b17139ad1e5b87428dc377f8aae1434, type: 2}
-  - {fileID: 11400000, guid: fcf74d1b30372fc47aa0587b2adbee90, type: 2}
+  - {fileID: 11400000, guid: 1bd1389bcf4c5c9408b255e996312f0c, type: 2}
+  - {fileID: 11400000, guid: 04fb1ffc9f472904e978eb89086bd821, type: 2}
+  - {fileID: 11400000, guid: 2105ab56e5aaeac42b9226615a500217, type: 2}
+  - {fileID: 11400000, guid: 27a62f2cda9af3e40b12b7765efc8d02, type: 2}
+  - {fileID: 11400000, guid: c97cd0a6de651be4e99cb8f069702155, type: 2}
+  - {fileID: 11400000, guid: 684ac40e43899b2459cf57b9fc25c1ce, type: 2}
+  - {fileID: 11400000, guid: fca1d1cc3c97ead439de2a2cea34b721, type: 2}
+  - {fileID: 11400000, guid: 5cfa73287ebcd5a44a09b3571ccaf919, type: 2}
+  - {fileID: 11400000, guid: 29b6aee1b2317af4c8e94071e12baaf9, type: 2}
   starsRequired:
     UseConstant: 1
     ConstantValue: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
   logoTiled: {fileID: 0}
   logoColor: {r: 0, g: 0, b: 0, a: 0}
   backgroundColor: {r: 0, g: 0, b: 0, a: 0}
-  musicTheme: {fileID: 8300000, guid: 20e9425de2722f54d98333b2882bb17f, type: 3}
+  musicTheme: {fileID: 8300000, guid: 414cdc979bd5f3545aa92041f52a32ff, type: 3}
   saveStorage: {fileID: 0}
   tutorial: {fileID: 0}
   progression: 

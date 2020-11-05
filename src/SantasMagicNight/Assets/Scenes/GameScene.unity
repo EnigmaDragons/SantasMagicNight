@@ -3454,16 +3454,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258997100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99582a5cdf6e48ff98728f552df87ec9, type: 3}
+  m_Script: {fileID: 11500000, guid: 798647a8760e4347aad1bfdacfb4c7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: 20e9425de2722f54d98333b2882bb17f, type: 3}
-  altMusic: []
-  musicPlayer: {fileID: 11400000, guid: 52e13afab39b19c4f8dda02ae49b87e5, type: 2}
-  delayDuration:
-    UseConstant: 1
-    ConstantValue: 0
-    FloatVariable: {fileID: 0}
+  defaultMusic: {fileID: 8300000, guid: 20e9425de2722f54d98333b2882bb17f, type: 3}
+  currentZone: {fileID: 11400000, guid: e8fc69fe1d2656a4c8f02b9da95abb99, type: 2}
+  player: {fileID: 11400000, guid: 52e13afab39b19c4f8dda02ae49b87e5, type: 2}
 --- !u!4 &1258997102
 Transform:
   m_ObjectHideFlags: 0

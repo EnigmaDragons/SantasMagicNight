@@ -1,13 +1,15 @@
-﻿using E7.Introloop;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayCurrentZoneMusicOnStart : MonoBehaviour
+public class PlayCurrentZoneMusicOnStart : OnMessage<LevelReset>
 {
-     [SerializeField] private IntroloopAudio defaultMusic;
+     [SerializeField] private AudioClip defaultMusic;
      [SerializeField] private CurrentZone currentZone;
-     [SerializeField] private IntroLoopAudioPlayer player;
+     [SerializeField] private GameMusicPlayer player;
 
-     void Start()
+     void Start() => Play();
+     protected override void Execute(LevelReset msg) => Play();
+
+     private void Play()
      {
           var music = currentZone.Zone.MusicTheme != null ? currentZone.Zone.MusicTheme : defaultMusic;
           player.PlaySelectedMusicLooping(music);
