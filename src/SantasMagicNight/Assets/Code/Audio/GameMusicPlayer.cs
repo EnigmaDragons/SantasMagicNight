@@ -30,7 +30,9 @@ public sealed class GameMusicPlayer : ScriptableObject
         
         if (musicSource.isPlaying && musicSource.clip != null && musicSource.clip.name.Equals(clipToPlay.name))
             return;
-        
+
+        var oldTrack = musicSource.clip != null ? musicSource.clip.name : "None";
+        Debug.Log($"Music - Old Track: {oldTrack} New Track: {clipToPlay.name}");
         StopMusicIfPlaying();
         lastSongName = clipToPlay.name;
         musicSource.clip = clipToPlay;
