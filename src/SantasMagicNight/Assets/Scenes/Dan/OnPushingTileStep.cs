@@ -5,18 +5,24 @@ using UnityEngine;
 public sealed class OnPushingTileStep : OnMessage<PieceMoved>
 {
     [SerializeField] Vector2 direction = Vector2.up;
+    [SerializeField] CurrentLevelMap currentLevelMap;
 
     protected override void Execute(PieceMoved msg)
     {
         if (!msg.HasSelected(gameObject)) return;
-        Debug.Log("Stepped On: " + gameObject.name);
+        if (currentLevelMap.IsBlocked(msg.To + new TilePoint(direction)))
+        {
+            Debug.Log((msg.To + new TilePoint(direction)) + " IS BLOCKED!!");
+            return;
+        }
         StartCoroutine(PushPiece(msg));
     }
 
     IEnumerator PushPiece(PieceMoved msg)
     {
-        yield return new WaitForSeconds(0.5f);
+        Debug.Log("From: " + msg.From +  " To: " + msg.To);
+        yield return new WaitForSeconds(1f);
         Message.Publish(new PieceMoved(msg.Piece, msg.To, msg.To + new TilePoint(direction)));
-        Debug.Log("Process Linkable Ended");
+        Debug.Log("Pushing Tile Action Ended");
     }
 }
