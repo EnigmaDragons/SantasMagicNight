@@ -101,6 +101,11 @@ public class CurrentLevelMap : ScriptableObject
     // Objects
     public bool IsJumpable(TilePoint tile) => jumpableObjects.Any(t => new TilePoint(t).Equals(tile));
     public bool IsLinkable(TilePoint tile) => linkableObjects.Any(t => new TilePoint(t).Equals(tile));
+    public bool IsLinkingPiece(GameObject obj)
+    {
+        var movement = obj.GetComponent<MovementEnabled>();
+        return movement != null && movement.Types.Contains(MovementType.Link);
+    }
 
     public void Move(GameObject obj, TilePoint from, TilePoint to)
         => Notify(() => {});
