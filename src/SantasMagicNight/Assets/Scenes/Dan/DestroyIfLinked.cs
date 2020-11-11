@@ -1,12 +1,15 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public sealed class DestroyIfLinked : OnMessage<PieceMoved>
-{
+{    
+    [SerializeField] private UiSfxPlayer sfx;
+    [SerializeField] private AudioClipWithVolume sound;
+    
     protected override void Execute(PieceMoved msg)
     {
         if (!msg.HasSelected(gameObject)) return;
-        Debug.Log(gameObject.name);
+        
+        sfx.Play(sound.clip, sound.volume);
         Message.Publish(new ObjectDestroyed(gameObject, false));
         FindObjectOfType<MoveProcessor>().ProcessLinkable(msg);
     }

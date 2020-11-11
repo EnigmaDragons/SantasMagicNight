@@ -185,6 +185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a92a28f166eb684bb66a736ad009a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfx: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
+  sound:
+    clip: {fileID: 8300000, guid: c4ba919cded8f684fbb92e73d9efaf3c, type: 3}
+    volume:
+      UseConstant: 1
+      ConstantValue: 1
+      FloatVariable: {fileID: 0}
 --- !u!114 &8068740696704694421
 MonoBehaviour:
   m_ObjectHideFlags: 0
