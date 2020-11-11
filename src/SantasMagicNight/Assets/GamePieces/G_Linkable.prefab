@@ -61,7 +61,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3459699865181331543}
-  - {fileID: 4414689211979395198}
+  - {fileID: 7637744859140377099}
   m_Father: {fileID: 306282282117999542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 306282282117999542}
   - component: {fileID: 935382106806835297}
   - component: {fileID: 8068740696704694421}
+  - component: {fileID: 633714906094880147}
   m_Layer: 0
   m_Name: G_Linkable
   m_TagString: Untagged
@@ -194,6 +195,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcf43e3b9ba83d548bd403f878f8f7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
+--- !u!114 &633714906094880147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239152715644283304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdf38d05b4241a453769162837f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
@@ -415,7 +429,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000005, z: 1.0000005}
   m_Center: {x: 0, y: -0.0000019073495, z: 0.000000953675}
---- !u!1001 &1503082855914875597
+--- !u!1001 &4640570109720400056
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -465,7 +479,7 @@ PrefabInstance:
     - target: {fileID: 2997186878443018931, guid: 3af8f10e263409a418a62606eced0b70,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 2997186878443018931, guid: 3af8f10e263409a418a62606eced0b70,
         type: 3}
@@ -484,9 +498,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3af8f10e263409a418a62606eced0b70, type: 3}
---- !u!4 &4414689211979395198 stripped
+--- !u!4 &7637744859140377099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2997186878443018931, guid: 3af8f10e263409a418a62606eced0b70,
     type: 3}
-  m_PrefabInstance: {fileID: 1503082855914875597}
+  m_PrefabInstance: {fileID: 4640570109720400056}
   m_PrefabAsset: {fileID: 0}

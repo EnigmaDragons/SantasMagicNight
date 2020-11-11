@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu]
 public sealed class MayLink : MovementOptionRule
@@ -8,5 +7,6 @@ public sealed class MayLink : MovementOptionRule
 
     public override MovementType Type => MovementType.Link;
 
-    public override bool IsPossible(MoveToRequested m) => map.IsLinkable(m.To);
+    public override bool IsPossible(MoveToRequested m) 
+        => m.From.IsAdjacentTo(m.To) && map.IsLinkable(m.To);
 }
