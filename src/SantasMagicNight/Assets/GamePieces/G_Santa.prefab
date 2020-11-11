@@ -2394,6 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indicator: {fileID: 9102682390887102441}
   canSelectIndicator: {fileID: 792731753355607774}
+  enabledOptionKey: {fileID: 11400000, guid: 62c161a89c8168d43b61f746283f8518, type: 2}
 --- !u!114 &508976949077288407
 MonoBehaviour:
   m_ObjectHideFlags: 0

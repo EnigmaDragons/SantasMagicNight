@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 5553124020340619516}
   - component: {fileID: 1933081182768496797}
   m_Layer: 0
-  m_Name: Linkable_Moving_CanJump
+  m_Name: G_Linkable_Moving_CanJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,6 +161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indicator: {fileID: 1858926684627002045}
+  canSelectIndicator: {fileID: 0}
+  enabledOptionKey: {fileID: 11400000, guid: 62c161a89c8168d43b61f746283f8518, type: 2}
 --- !u!114 &5553124020340619516
 MonoBehaviour:
   m_ObjectHideFlags: 0
