@@ -74,10 +74,18 @@ public abstract class OnMessage<T1, T2, T3, T4> : MonoBehaviour
         Message.Subscribe<T2>(Execute, this);
         Message.Subscribe<T3>(Execute, this);
         Message.Subscribe<T4>(Execute, this);
+        AfterEnable();
     }
 
-    private void OnDisable() => Message.Unsubscribe(this);
+    private void OnDisable()
+    {
+        Message.Unsubscribe(this);
+        AfterDisable();
+    }
 
+    protected virtual void AfterEnable() {}
+    protected virtual void AfterDisable() {}
+    
     protected abstract void Execute(T1 msg);
     protected abstract void Execute(T2 msg);
     protected abstract void Execute(T3 msg);

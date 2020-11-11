@@ -10,4 +10,6 @@ public class StringVariable : ScriptableObject
         get { return value; }
         set { this.value = value; }
     }
+
+    public static implicit operator string(StringVariable s) => s.Value;
 }

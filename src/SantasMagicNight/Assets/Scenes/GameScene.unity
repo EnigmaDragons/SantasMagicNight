@@ -6621,6 +6621,7 @@ MonoBehaviour:
   map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
   piece: {fileID: 11400000, guid: d282e5116cb67fc4ea25819f6057bab2, type: 2}
   currentLevel: {fileID: 11400000, guid: f81c10460cdb9464397ed5864a15114b, type: 2}
+  enabledOptionKey: {fileID: 11400000, guid: 047caf17fd1c6734bbc6c85ce676460f, type: 2}
   indicatorPrototype: {fileID: 8953496877418380245, guid: caa0f13cc659e6343aa7d3caa9e02ab0,
     type: 3}
 --- !u!114 &7089870335177044603

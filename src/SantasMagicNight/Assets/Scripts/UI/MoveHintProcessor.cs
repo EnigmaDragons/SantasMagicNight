@@ -2,16 +2,19 @@
 using System.Linq;
 using UnityEngine;
 
-public class MoveHintProcessor : OnMessage<TurnMovementFinished, PieceMovementStarted, PieceMovementFinished>
+public class MoveHintProcessor : OnMessage<TurnMovementFinished, PieceMovementStarted, PieceMovementFinished, PlayerPrefsChanged>
 {
     [SerializeField] private CurrentLevelMap map;
     [SerializeField] private CurrentSelectedPiece piece;
     [SerializeField] private CurrentLevel currentLevel;
+    [SerializeField] private StringVariable enabledOptionKey;
     [SerializeField] private GameObject indicatorPrototype;
 
     private readonly List<GameObject> _hints = new List<GameObject>();
 
-    private bool _hintsEnabled = true;
+    private bool HintsEnabled 
+        => !PlayerPrefs.HasKey(enabledOptionKey)
+           || PlayerPrefs.GetInt(enabledOptionKey) != 0;
 
     private void Awake()
     {
@@ -32,12 +35,13 @@ public class MoveHintProcessor : OnMessage<TurnMovementFinished, PieceMovementSt
     protected override void Execute(TurnMovementFinished msg) => UpdateHints();
     protected override void Execute(PieceMovementStarted msg) => HideAllHints();
     protected override void Execute(PieceMovementFinished msg) => UpdateHints();
-    
+    protected override void Execute(PlayerPrefsChanged msg) => UpdateHints();
+
     private void UpdateHints()
     {
         HideAllHints();
 
-        if (!piece.Selected.IsPresent)
+        if (!HintsEnabled || !piece.Selected.IsPresent)
             return;
 
         var obj = piece.Selected.Value;

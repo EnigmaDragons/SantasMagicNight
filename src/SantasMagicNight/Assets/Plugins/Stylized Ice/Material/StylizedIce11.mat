@@ -94,7 +94,7 @@ Material:
     - _GlossyReflections: 1
     - _Lighting: 1.47
     - _LightingEnv: 0.4
-    - _LightingEnvSigma: -3.58
+    - _LightingEnvSigma: -3.47
     - _Luminousness: 2.38
     - _Metallic: 0
     - _Mode: 0
@@ -112,7 +112,7 @@ Material:
     - _SpecularRange: 0
     - _SrcBlend: 1
     - _Test: 1
-    - _ThicknessMapScaleX: 3
+    - _ThicknessMapScaleX: 0.1
     - _ThicknessMapScaleY: 3
     - _TihcknessMapScaleX: 1
     - _UVSec: 0
