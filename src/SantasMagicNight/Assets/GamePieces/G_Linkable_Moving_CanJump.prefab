@@ -76,6 +76,8 @@ GameObject:
   - component: {fileID: 3883382039374036792}
   - component: {fileID: 5553124020340619516}
   - component: {fileID: 1933081182768496797}
+  - component: {fileID: 172847524150246679}
+  - component: {fileID: 9171782919917120566}
   m_Layer: 0
   m_Name: G_Linkable_Moving_CanJump
   m_TagString: Untagged
@@ -190,6 +192,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a92a28f166eb684bb66a736ad009a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &172847524150246679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624170249883142606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaa0761ce3d4708b4f42b980d5d12f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
+--- !u!114 &9171782919917120566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624170249883142606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128b6a20ab6144a9b305edfec22777df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
+  sound:
+    clip: {fileID: 8300000, guid: afafc3740f3294e4db921ee7832950a2, type: 3}
+    volume:
+      UseConstant: 1
+      ConstantValue: 0.5
+      FloatVariable: {fileID: 0}
 --- !u!1 &628070742453241264
 GameObject:
   m_ObjectHideFlags: 0
