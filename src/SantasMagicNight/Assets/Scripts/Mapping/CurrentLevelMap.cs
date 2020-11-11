@@ -77,6 +77,7 @@ public class CurrentLevelMap : ScriptableObject
     public void RegisterWalkableTile(GameObject obj) => UpdateReadOnlyAfter(() => UpdateSize(() => walkableTiles.Add(obj)));
     public void RegisterBlockingObject(GameObject obj) => UpdateSize(() => blockedTiles.Add(obj));
     public void RegisterPushingTile(GameObject obj) => UpdateSize(() => pushingTiles.Add(obj));
+
     public void RegisterAsCollectible(GameObject obj) => collectibleObjects.Add(obj);
     public void RegisterFinalCameraAngle(Transform t) => finalCameraAngle = t;
 
@@ -94,12 +95,12 @@ public class CurrentLevelMap : ScriptableObject
     // Tiles
     public bool IsBlocked(TilePoint tile) => blockedTiles.Any(t => new TilePoint(t).Equals(tile));
     public bool IsWalkable(TilePoint tile) => walkableTiles.Any(w => new TilePoint(w).Equals(tile));
-    public bool IsPushing(TilePoint tile) => pushingTiles.Any(w => new TilePoint(w).Equals(tile));
+    public bool IsPushingTile(TilePoint tile) => pushingTiles.Any(w => new TilePoint(w).Equals(tile));
+    public bool IsPieceBeingPushed(GameObject piece) => pushingTiles.Any(w => w.GetComponent<OnPushingTileStep>().PushedPiece == piece);
 
     // Objects
     public bool IsJumpable(TilePoint tile) => jumpableObjects.Any(t => new TilePoint(t).Equals(tile));
     public bool IsLinkable(TilePoint tile) => linkableObjects.Any(t => new TilePoint(t).Equals(tile));
-
 
     public void Move(GameObject obj, TilePoint from, TilePoint to)
         => Notify(() => {});
@@ -123,7 +124,7 @@ public class CurrentLevelMap : ScriptableObject
             if (rules.IsLinkable)
                 RegisterAsLinkable(obj);
             if (rules.IsPushing)
-                RegisterPushingTile(obj);
+                RegisterPushingTile(obj.gameObject);
         });
     }
     
