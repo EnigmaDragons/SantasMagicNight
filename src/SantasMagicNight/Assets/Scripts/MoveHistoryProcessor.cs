@@ -18,7 +18,7 @@ public sealed class MoveHistoryProcessor : MonoBehaviour
         history.Add(msg);
         if (map.LinkableObjects.Any(l => msg.From.IsAdjacentTo(new TilePoint(l))))
             return;
-        if (map.IsPushing(msg.From))
+        if (map.IsPushingTile(msg.From) && !map.IsBlocked(msg.To))
             return;
         history.FinishTurn();
         Message.Publish(new TurnMovementFinished());

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1248256933993055979}
   - component: {fileID: 4266318593508380828}
-  - component: {fileID: 4507239511272558323}
   - component: {fileID: 5729173458885775075}
   - component: {fileID: 8350863190246351665}
   m_Layer: 8
@@ -45,19 +44,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987a62245d3744639b56da41f49f88ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevelMap: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
---- !u!114 &4507239511272558323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248256933993055978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c01b497cfdec1042846637a0d594cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevelMap: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
