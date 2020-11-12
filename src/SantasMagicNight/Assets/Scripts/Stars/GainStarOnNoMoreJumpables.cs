@@ -3,7 +3,6 @@
 public class GainStarOnNoMoreJumpables : OnMessage<LevelStateChanged, UndoStarCollected>
 {
     [SerializeField] private CurrentLevelMap map;
-    [SerializeField] private GameObject collectedStar;
 
     private bool _awardedStar = false;
 
@@ -13,9 +12,6 @@ public class GainStarOnNoMoreJumpables : OnMessage<LevelStateChanged, UndoStarCo
         {
             _awardedStar = true;
             Message.Publish(StarCollected.NoMoreJumpables);
-            var star = Instantiate(collectedStar, transform.parent.parent);
-            star.transform.position = transform.position;
-            gameObject.SetActive(false);
         }
     }
 

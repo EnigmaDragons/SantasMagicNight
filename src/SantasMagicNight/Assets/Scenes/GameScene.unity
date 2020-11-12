@@ -6569,6 +6569,7 @@ GameObject:
   - component: {fileID: 6815042394106056353}
   - component: {fileID: 6815042394106056352}
   - component: {fileID: 6815042394106056354}
+  - component: {fileID: 6815042394106056355}
   m_Layer: 0
   m_Name: ReactiveSystems
   m_TagString: Untagged
@@ -6624,6 +6625,19 @@ MonoBehaviour:
   enabledOptionKey: {fileID: 11400000, guid: 047caf17fd1c6734bbc6c85ce676460f, type: 2}
   indicatorPrototype: {fileID: 8953496877418380245, guid: caa0f13cc659e6343aa7d3caa9e02ab0,
     type: 3}
+--- !u!114 &6815042394106056355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815042394106056351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7156b381eb9190c40878d0dcc4440ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
 --- !u!114 &7089870335177044603
 MonoBehaviour:
   m_ObjectHideFlags: 0

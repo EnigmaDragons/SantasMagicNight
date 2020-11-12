@@ -8,12 +8,15 @@ public sealed class PlayerPrefBoolOption : MonoBehaviour
 
     private void Awake()
     {
-        if (toggle == null) return;
-        
-        toggle.onValueChanged.AddListener(Set);
+        if (toggle != null) 
+            toggle.onValueChanged.AddListener(Set);
     }
 
-    private void OnEnable() => toggle.SetIsOnWithoutNotify(IsEnabled);
+    private void OnEnable()
+    {
+        if (toggle != null)
+            toggle.SetIsOnWithoutNotify(IsEnabled);
+    }
 
     public bool IsEnabled 
         => PlayerPrefs.HasKey(key)
