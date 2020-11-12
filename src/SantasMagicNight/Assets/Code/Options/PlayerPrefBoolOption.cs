@@ -10,9 +10,10 @@ public sealed class PlayerPrefBoolOption : MonoBehaviour
     {
         if (toggle == null) return;
         
-        toggle.SetIsOnWithoutNotify(IsEnabled);
         toggle.onValueChanged.AddListener(Set);
     }
+
+    private void OnEnable() => toggle.SetIsOnWithoutNotify(IsEnabled);
 
     public bool IsEnabled 
         => PlayerPrefs.HasKey(key)
