@@ -10,7 +10,10 @@ public class TileIndicatedProcessor : OnMessage<TileIndicated>
         var selectable = map.GetSelectable(msg.Tile);
         
         // Linking
-        if (piece.Selected.IsPresent && map.IsLinkingPiece(piece.Selected.Value) && map.IsLinkable(msg.Tile))
+        if (piece.Selected.IsPresent 
+            && msg.Tile.IsAdjacentTo(new TilePoint(piece.Selected.Value)) 
+            && map.IsLinkingPiece(piece.Selected.Value) 
+            && map.IsLinkable(msg.Tile))
         {
             Debug.Log($"Link To {msg.Tile} Requested");
             piece.Selected.IfPresent(p => Message.Publish(new MoveToRequested(p, new TilePoint(p.gameObject), msg.Tile)));
