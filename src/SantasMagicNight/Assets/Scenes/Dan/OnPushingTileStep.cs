@@ -26,7 +26,7 @@ public sealed class OnPushingTileStep : OnMessage<PieceMoved>
     {
         PushedPiece = msg.Piece;
         Debug.Log("From: " + msg.From +  " To: " + msg.To);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.6f);
         Message.Publish(new PieceMoved(msg.Piece, msg.To, msg.To + new TilePoint(direction)));
         Debug.Log("Pushing Tile Action Ended");
         PushedPiece = null;
