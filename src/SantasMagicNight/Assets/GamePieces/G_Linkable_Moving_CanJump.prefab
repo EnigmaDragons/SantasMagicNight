@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 1933081182768496797}
   - component: {fileID: 172847524150246679}
   - component: {fileID: 9171782919917120566}
+  - component: {fileID: 8621884515262456742}
   m_Layer: 0
   m_Name: G_Linkable_Moving_CanJump
   m_TagString: Untagged
@@ -231,6 +232,19 @@ MonoBehaviour:
       UseConstant: 1
       ConstantValue: 1
       FloatVariable: {fileID: 0}
+--- !u!114 &8621884515262456742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624170249883142606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2bdf38d05b4241a453769162837f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: 3e1868dedbe7c5945b4fe845baa54d80, type: 2}
 --- !u!1 &628070742453241264
 GameObject:
   m_ObjectHideFlags: 0
