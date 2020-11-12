@@ -7,7 +7,11 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
 {
     [SerializeField] private CurrentLevelMap map;
     bool isProcessing = false;
-    
+
+    // Cached Components
+    RegisterAsLinkable[] linkableObjects = null;
+    List<RegisterAsLinkable> linkList = new List<RegisterAsLinkable>();
+
     protected override void Execute(MoveToRequested m)
     {        
         if (m.Piece.GetComponent<MovementEnabled>() == null)
@@ -35,35 +39,51 @@ public sealed class MoveProcessor : OnMessage<MoveToRequested>
 
     IEnumerator ProcessLinkableCoroutine(PieceMoved msg)
     {
-        Debug.Log("Process Linkable Started");
         isProcessing = true;
-        RegisterAsLinkable[] linkableObjects = FindObjectsOfType<RegisterAsLinkable>();
-        List<RegisterAsLinkable> linkList = new List<RegisterAsLinkable>();
+
+        if (linkableObjects == null)
+        {
+            linkableObjects = FindObjectsOfType<RegisterAsLinkable>();
+        }
+        linkList.Clear();
+
+        TilePoint origin = msg.To;
+        bool isMovementInXAxis = Mathf.Abs(msg.Delta.X) == 1 && msg.Delta.Y == 0;
+
         foreach (RegisterAsLinkable linkableObj in linkableObjects)
         {
+            TilePoint destination = new TilePoint(
+                (int)linkableObj.transform.localPosition.x, 
+                (int)linkableObj.transform.localPosition.y);
+
+            if (origin == destination) continue;
+
+            if (isMovementInXAxis)
+            {
+                TilePoint diff = origin - destination;
+                if (diff.Y != 0) continue;
+            }
+            else // Y Axis Movement
+            {
+                TilePoint diff = origin - destination;
+                if (diff.X != 0) continue;
+            }
+
+            Debug.Log("Process Linkable: Potential Movement: " + origin + " " + destination);
             linkList.Add(linkableObj);
         }
-        TilePoint origin = msg.To;
-        bool isMovementInXAxis = msg.Delta.X == 1 && msg.Delta.Y == 0;
-        for(int i = 0; i < linkList.Count; i++)
+
+        Debug.Log("Process Linkable Started with " + linkList.Count + " linkables. X axis:: " + isMovementInXAxis);
+
+        for (int i = 0; i < linkList.Count; i++)
         {
             for (int j = 0; j < linkList.Count; j++)
             {
                 if (!linkList[j].isActiveAndEnabled) continue;
-                
-                TilePoint destination = new TilePoint((int)linkList[j].transform.localPosition.x, (int)linkList[j].transform.localPosition.y);
-                if (origin == destination) continue;
 
-                if (isMovementInXAxis)
-                {
-                    TilePoint diff = origin - destination;
-                    if (diff.Y != 0) continue;
-                }
-                else
-                {
-                    TilePoint diff = origin - destination;
-                    if (diff.X != 0) continue;
-                }
+                TilePoint destination = new TilePoint(
+                (int)linkList[j].transform.localPosition.x,
+                (int)linkList[j].transform.localPosition.y);
 
                 if (destination.IsAdjacentTo(origin))
                 {
