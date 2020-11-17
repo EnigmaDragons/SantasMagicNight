@@ -3319,12 +3319,12 @@ PrefabInstance:
     - target: {fileID: 5846094309846294467, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5846094309935392208, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5846094309999816374, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
@@ -3394,17 +3394,22 @@ PrefabInstance:
     - target: {fileID: 5846094310603917285, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5846094311369228741, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5846094311526338702, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846094311526338702, guid: 8e7e5086e96c308429cfc5e844077295,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5846094311526338703, guid: 8e7e5086e96c308429cfc5e844077295,
         type: 3}

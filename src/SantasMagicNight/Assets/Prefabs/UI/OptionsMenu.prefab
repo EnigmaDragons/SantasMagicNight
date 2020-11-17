@@ -2848,6 +2848,7 @@ GameObject:
   - component: {fileID: 478987326847245023}
   - component: {fileID: 3588421015880333089}
   - component: {fileID: 5929827722925458026}
+  - component: {fileID: 7669611955779665102}
   m_Layer: 0
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -3046,6 +3047,31 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   alternateKeys: 
+--- !u!114 &7669611955779665102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846094311526338702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acb95fa5d4f48cfb0974cc2a276cec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
+  onEnableSound:
+    clip: {fileID: 0}
+    volume:
+      UseConstant: 1
+      ConstantValue: 0
+      FloatVariable: {fileID: 0}
+  onDisableSound:
+    clip: {fileID: 8300000, guid: 4c2f2037b0c223342a4ab6eec9a3764b, type: 3}
+    volume:
+      UseConstant: 1
+      ConstantValue: 1
+      FloatVariable: {fileID: 0}
 --- !u!1 &5846094311542547281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3476,7 +3502,6 @@ GameObject:
   - component: {fileID: 7153483224031794903}
   - component: {fileID: 4735281647721837625}
   - component: {fileID: 4237157920375948813}
-  - component: {fileID: 2611867513666952232}
   m_Layer: 0
   m_Name: DoneButton
   m_TagString: Untagged
@@ -3583,20 +3608,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2611867513666952232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8046804817223311898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e35eba71011d4f0bbe846565f92bf6d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 4c2f2037b0c223342a4ab6eec9a3764b, type: 3}
-  player: {fileID: 11400000, guid: 86eac65d09e3f1643a51c753e9397bf6, type: 2}
 --- !u!1 &8592516998939911878
 GameObject:
   m_ObjectHideFlags: 0
