@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadingController : OnMessage<NavigateToSceneRequested>
+public class LoadingController : OnMessage<NavigateToSceneRequested, HideLoadUiRequested>
 {
     [SerializeField] private CanvasGroup loadUi;
     [SerializeField] private float loadFadeDuration = 1f;
@@ -19,6 +19,8 @@ public class LoadingController : OnMessage<NavigateToSceneRequested>
         _loadState = SceneManager.LoadSceneAsync(msg.SceneName);
         _loadState.completed += OnLoadFinished;
     }
+
+    protected override void Execute(HideLoadUiRequested msg) => loadUi.alpha = 0f;
 
     private void Update()
     {
