@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "Santa/Navigator")]
 public class SantaNavigator : ScriptableObject
 {
-    public void NavigateToGameScene() => SceneManager.LoadScene("GameScene");
-    public void NavigateToCredits() => SceneManager.LoadScene("CreditsScene");
-    public void NavigateToMainMenu() => SceneManager.LoadScene("MainMenu");
+    public void NavigateToGameScene() => Message.Publish(new NavigateToSceneRequested("GameScene"));
+    public void NavigateToCredits() => Message.Publish(new NavigateToSceneRequested("CreditsScene"));
+    public void NavigateToMainMenu() =>  Message.Publish(new NavigateToSceneRequested("MainMenu"));
 
     public void ExitGame()
     {
