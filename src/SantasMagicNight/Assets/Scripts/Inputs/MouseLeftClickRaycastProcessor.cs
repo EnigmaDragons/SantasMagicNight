@@ -5,6 +5,7 @@ namespace Inputs
     public sealed class MouseLeftClickRaycastProcessor : MonoBehaviour
     {
         [SerializeField] private BoolReference gameInputActive;
+        [SerializeField] private bool debugLoggingEnabled;
         
         private Camera _camera;
         
@@ -29,7 +30,8 @@ namespace Inputs
                     continue;
                 
                 var tilePoint = new TilePoint(obj);
-                Debug.Log($"Hit Tile {tilePoint} - {obj.name}");
+                if (debugLoggingEnabled)
+                    Debug.Log($"Hit Tile {tilePoint} - {obj.name}");
                 Message.Publish(new TileIndicated(tilePoint));
             }
         }

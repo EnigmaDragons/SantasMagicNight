@@ -16,6 +16,9 @@ public class MouseDragRaycastProcessor : MonoBehaviour
 
     private void Update()
     {
+        if (!gameInputActive)
+            return;
+        
         if (Input.GetMouseButtonDown(0))
         {
             var indicated = GetIndicated();
