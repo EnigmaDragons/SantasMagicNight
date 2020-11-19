@@ -20,7 +20,11 @@ public class LoadingController : OnMessage<NavigateToSceneRequested, HideLoadUiR
         _loadState.completed += OnLoadFinished;
     }
 
-    protected override void Execute(HideLoadUiRequested msg) => loadUi.alpha = 0f;
+    protected override void Execute(HideLoadUiRequested msg)
+    {
+        if (!_isLoading && loadUi.alpha <= 0f)
+            loadUi.alpha = 0f;
+    }
 
     private void Update()
     {
