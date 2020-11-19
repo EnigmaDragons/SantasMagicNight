@@ -117,7 +117,8 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
+    extraUserProperties:
+    - '#BAKERY{"meshName":["present4_003","present4_005","present4_008","present4","present1_001","reindeer_1_antlers","present3","presents_bag","present3_001","reindeer_1_collars","present4_001","reindeer_2_collars","reindeer_2","present4_004","present2_002","present4_006","present2","present4_007","present1","present4_002","present2_001","santa","present2_003","sleigh_handles","reindeer_2_antlers","reindeer_1","Sleigh"],"padding":[256,256,256,256,256,256,222,54,118,256,256,256,89,256,256,256,256,256,256,236,256,54,256,201,256,89,27],"unwrapper":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}'
     clipAnimations: []
     isReadable: 0
   meshes:

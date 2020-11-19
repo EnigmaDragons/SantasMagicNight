@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modifiedAssetPathList:
   - Assets/Bakery/examples/content/sponza/sponza.FBX
-  modifiedAssetPaddingHash: d6a958ff
+  - Assets/Art/Santa/cartoon_santa_sleigh.fbx
+  - Assets/Art/House/House-1/House_1.FBX
+  modifiedAssetPaddingHash: d6a958ff365973c0de09ecc0
