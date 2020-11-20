@@ -16,7 +16,16 @@ MonoBehaviour:
   - Assets/Bakery/examples/content/sponza/sponza.FBX
   - Assets/Art/Santa/cartoon_santa_sleigh.fbx
   - Assets/Art/House/House-1/House_1.FBX
-  modifiedAssetPaddingHash: d6a958ff365973c0de09ecc0
+  - Assets/Art/Trees/WinterCollection.fbx
+  - Assets/Art/LampPost/Street_Lantern.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_01.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_03.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_05.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_04.FBX
+  - Assets/Plugins/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/stone-snow.fbx
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_02.FBX
+  - Assets/Plugins/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/snowman.fbx
+  modifiedAssetPaddingHash: d6a958ff365973c061dd894bced15080ecc124914adc894bd9398033df4dfff014f33a06ecc12491b4c2a693ae5634b7
   modifiedMeshList: []
   modifiedMeshPaddingList: 
   modifiedAssets:
@@ -431,7 +440,43 @@ MonoBehaviour:
     unwrapper: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   - meshName:
     - House-1
-    padding: 0c000000
+    padding: 56000000
+    unwrapper: 00000000
+  - meshName:
+    - spruce03
+    padding: b3000000
+    unwrapper: 00000000
+  - meshName:
+    - Street_Lantern
+    padding: 00010000
+    unwrapper: 00000000
+  - meshName:
+    - Winter Rock_01
+    padding: 10000000
+    unwrapper: 00000000
+  - meshName:
+    - Winter Rock_03
+    padding: 23000000
+    unwrapper: 00000000
+  - meshName:
+    - Winter Rock_05
+    padding: 30000000
+    unwrapper: 00000000
+  - meshName:
+    - Winter Rock_04
+    padding: 0a000000
+    unwrapper: 00000000
+  - meshName:
+    - stone-snow
+    padding: 00010000
+    unwrapper: 00000000
+  - meshName:
+    - Winter Rock_02
+    padding: 1d000000
+    unwrapper: 00000000
+  - meshName:
+    - snowman
+    padding: 87000000
     unwrapper: 00000000
   assetList:
   - Assets/Bakery/examples/content/sponza/bush.FBX
@@ -545,5 +590,5 @@ MonoBehaviour:
   renderSettingsRTPVSceneView: 0
   renderSettingsRTPVWidth: 640
   renderSettingsRTPVHeight: 360
-  modifiedMeshPaddingArray: 0c000000
+  modifiedMeshPaddingArray: 23000000
   modifiedMeshUnwrapperArray: 00000000

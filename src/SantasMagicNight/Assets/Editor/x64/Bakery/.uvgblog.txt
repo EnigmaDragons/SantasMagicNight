@@ -651,3 +651,493 @@ Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/MainMenu_LMA4_f
 Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/MainMenu_LM85_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/MainMenuLightmaps/MainMenu_LM85_final.hdr"
 Symbol file LoadedFromMemory doesn't match image F:\Unity\Unity Projects\SantasMagicNight\src\SantasMagicNight\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
 Symbol file LoadedFromMemory doesn't match image F:\Unity\Unity Projects\SantasMagicNight\src\SantasMagicNight\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for LightTest_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for LightTest_LMA1 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for LightTest_LMA2 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for LightTest_LMA3 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for LightTest_LMA4 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LMA1.lz4" 2 0 1 0
+Running ftrace fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LMA3.lz4" 2 0 3 0
+Running ftrace fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LMA2.lz4" 2 0 2 0
+Running ftrace fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LMA4.lz4" 2 0 4 0
+Running ftrace batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_5" 4 0 0 batchpointlight_0_0_5.bin
+Running ftrace skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1145266510_0" 4 0 0 sky0.bin
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for LightTest_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_5" 4 0 0 batchpointlight_0_0_5.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_512314030_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "LightTest_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "LightTest_LM0_diffuse" 4 16 0 "gi_LightTest_LM00.bin" "LightTest_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "LightTest_LM0_final" 4 16 0 "gi_LightTest_LM01.bin" "LightTest_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/LightTest_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/LightTest_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "LightTest_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/LightTest_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/LightTest/LightTest_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for LightTest_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_LightTest_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_5" 4 0 0 batchpointlight_0_0_5.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_512314030_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "LightTest_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "LightTest_LM0_diffuse" 4 16 0 "gi_LightTest_LM00.bin" "LightTest_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "LightTest_LM0_final" 4 16 0 "gi_LightTest_LM01.bin" "LightTest_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/LightTest_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/LightTest_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "LightTest_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/LightTest_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/LightTest/LightTest_LM0_final.hdr"
+2020-11-19
+Rendering UV GBuffer for Z1-L1_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L1_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_5" 4 0 0 batchpointlight_0_0_5.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-1913715157_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L1_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L1_LM0_diffuse" 4 16 0 "gi_Z1-L1_LM00.bin" "Z1-L1_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L1_LM0_final" 4 16 0 "gi_Z1-L1_LM01.bin" "Z1-L1_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L1_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L1_LM0_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L1_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L1_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L1/Z1-L1_LM0_final.hdr"
+Symbol file LoadedFromMemory doesn't match image F:\Unity\Unity Projects\SantasMagicNight\src\SantasMagicNight\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L2_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L2_LM0.lz4" 2 0 0 0
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-1913715157_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L2_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L2_LM0_diffuse" 4 16 0 "gi_Z1-L2_LM00.bin" "Z1-L2_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L2_LM0_final" 4 16 0 "gi_Z1-L2_LM01.bin" "Z1-L2_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L2_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L2_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L2_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L2_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L2/Z1-L2_LM0_final.hdr"
+Symbol file LoadedFromMemory doesn't match image F:\Unity\Unity Projects\SantasMagicNight\src\SantasMagicNight\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L2_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L2_LM0.lz4" 2 0 0 0
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-229435625_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L2_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L2_LM0_diffuse" 4 16 0 "gi_Z1-L2_LM00.bin" "Z1-L2_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L2_LM0_final" 4 16 0 "gi_Z1-L2_LM01.bin" "Z1-L2_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L2_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L2_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L2_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L2_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L2/Z1-L2_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L3_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L3_LM0.lz4" 2 0 0 0
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-229435625_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L3_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L3_LM0_diffuse" 4 16 0 "gi_Z1-L3_LM00.bin" "Z1-L3_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L3_LM0_final" 4 16 0 "gi_Z1-L3_LM01.bin" "Z1-L3_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L3_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L3_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L3_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L3_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L3/Z1-L3_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L4_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L4_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_0" 4 0 0 batchpointlight_0_0_0.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-1174741020_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0_diffuse" 4 16 0 "gi_Z1-L4_LM00.bin" "Z1-L4_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0_final" 4 16 0 "gi_Z1-L4_LM01.bin" "Z1-L4_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L4_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L4/Z1-L4_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L4_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L4_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_16" 4 0 0 batchpointlight_0_0_16.bin
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_17_17" 4 0 0 batchpointlight_0_17_17.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1826756987_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0_diffuse" 4 16 0 "gi_Z1-L4_LM00.bin" "Z1-L4_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0_final" 4 16 0 "gi_Z1-L4_LM01.bin" "Z1-L4_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L4_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L4/Z1-L4_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L4_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L4_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_16" 4 0 0 batchpointlight_0_0_16.bin
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_17_18" 4 0 0 batchpointlight_0_17_18.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1826756987_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0_diffuse" 4 16 0 "gi_Z1-L4_LM00.bin" "Z1-L4_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L4_LM0_final" 4 16 0 "gi_Z1-L4_LM01.bin" "Z1-L4_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L4_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L4_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L4/Z1-L4_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L5_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L5_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_16" 4 0 0 batchpointlight_0_0_16.bin
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_17_20" 4 0 0 batchpointlight_0_17_20.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1826756987_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L5_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L5_LM0_diffuse" 4 16 0 "gi_Z1-L5_LM00.bin" "Z1-L5_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L5_LM0_final" 4 16 0 "gi_Z1-L5_LM01.bin" "Z1-L5_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L5_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L5_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L5_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L5_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L5/Z1-L5_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L5_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L5_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_16" 4 0 0 batchpointlight_0_0_16.bin
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_17_20" 4 0 0 batchpointlight_0_17_20.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1805077078_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L5_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L5_LM0_diffuse" 4 16 0 "gi_Z1-L5_LM00.bin" "Z1-L5_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L5_LM0_final" 4 16 0 "gi_Z1-L5_LM01.bin" "Z1-L5_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L5_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L5_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L5_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L5_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L5/Z1-L5_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L6_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L6_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_33" 4 0 0 batchpointlight_0_0_33.bin
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_34_37" 4 0 0 batchpointlight_0_34_37.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1805077078_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L6_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L6_LM0_diffuse" 4 16 0 "gi_Z1-L6_LM00.bin" "Z1-L6_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L6_LM0_final" 4 16 0 "gi_Z1-L6_LM01.bin" "Z1-L6_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L6_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L6_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L6_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L6_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L6/Z1-L6_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L6_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L6_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_33" 4 0 0 batchpointlight_0_0_33.bin
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_34_37" 4 0 0 batchpointlight_0_34_37.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-429273814_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L6_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L6_LM0_diffuse" 4 16 0 "gi_Z1-L6_LM00.bin" "Z1-L6_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L6_LM0_final" 4 16 0 "gi_Z1-L6_LM01.bin" "Z1-L6_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L6_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L6_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L6_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L6_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L6/Z1-L6_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L7_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L7_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_3" 4 0 0 batchpointlight_0_0_3.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_-429273814_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L7_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L7_LM0_diffuse" 4 16 0 "gi_Z1-L7_LM00.bin" "Z1-L7_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L7_LM0_final" 4 16 0 "gi_Z1-L7_LM01.bin" "Z1-L7_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L7_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L7_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L7_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L7_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L7/Z1-L7_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 1024x1024: 1
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L8_LM0 179
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L8_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_16" 4 0 0 batchpointlight_0_0_16.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_1764684357_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L8_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L8_LM0_diffuse" 4 16 0 "gi_Z1-L8_LM00.bin" "Z1-L8_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L8_LM0_final" 4 16 0 "gi_Z1-L8_LM01.bin" "Z1-L8_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L8_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L8_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L8_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L8_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L8/Z1-L8_LM0_final.hdr"
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+Rendering UV GBuffer for Z1-L9_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\elric\AppData\Local\Temp\frender" "uvpos_Z1-L9_LM0.lz4" 2 0 0 0
+Running ftraceRTX batchpointlight "C:\Users\elric\AppData\Local\Temp\frender" "PointBatch_0_0_33" 4 0 0 batchpointlight_0_0_33.bin
+Running ftraceRTX skycubemap "C:\Users\elric\AppData\Local\Temp\frender" "light_917055743_0" 4 0 0 sky0.bin
+Running ftraceRTX addmul "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L9_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L9_LM0_diffuse" 4 16 0 "gi_Z1-L9_LM00.bin" "Z1-L9_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\elric\AppData\Local\Temp\frender" "Z1-L9_LM0_final" 4 16 0 "gi_Z1-L9_LM01.bin" "Z1-L9_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiser "C:\Users\elric\AppData\Local\Temp\frender/Z1-L9_LM0_final_HDR.lz4" "C:\Users\elric\AppData\Local\Temp\frender/Z1-L9_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\elric\AppData\Local\Temp\frender" "0" "Z1-L9_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\elric\AppData\Local\Temp\frender/Z1-L9_LM0_final_HDR.lz4" "F:/Unity/Unity Projects/SantasMagicNight/src/SantasMagicNight/Assets/Scenes/Levels/Zone1/Z1-L9/Z1-L9_LM0_final.hdr"

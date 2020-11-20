@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<SSHPreset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <orientation>landscape</orientation>
+  <lastSavePath>D:/srcctrl/SantasMagicNight/marketing/Screenshots</lastSavePath>
+  <textureFormat>RGB24</textureFormat>
+  <keyToPress>S</keyToPress>
+  <keyToHold>LeftShift</keyToHold>
+  <buildPathRoot>MyComputer</buildPathRoot>
+  <buildPathExtra>temp/screenshots/santa</buildPathExtra>
+  <sizes>
+    <size width="2208" height="1242" label="" />
+    <size width="2732" height="2048" label="" />
+    <size width="1920" height="1080" label="" />
+    <size width="2688" height="1242" label="" />
+  </sizes>
+</SSHPreset>

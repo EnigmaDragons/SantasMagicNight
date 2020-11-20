@@ -16,4 +16,13 @@ MonoBehaviour:
   - Assets/Bakery/examples/content/sponza/sponza.FBX
   - Assets/Art/Santa/cartoon_santa_sleigh.fbx
   - Assets/Art/House/House-1/House_1.FBX
-  modifiedAssetPaddingHash: d6a958ff365973c0de09ecc0
+  - Assets/Art/Trees/WinterCollection.fbx
+  - Assets/Art/LampPost/Street_Lantern.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_01.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_03.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_05.FBX
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_04.FBX
+  - Assets/Plugins/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/stone-snow.fbx
+  - Assets/Plugins/Lowpoly Environment Pack/Models/Winter Rocks 01/Winter Rock_02.FBX
+  - Assets/Plugins/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/snowman.fbx
+  modifiedAssetPaddingHash: d6a958ff365973c061dd894bced15080ecc124914adc894bd9398033df4dfff014f33a06ecc12491b4c2a693ae5634b7
