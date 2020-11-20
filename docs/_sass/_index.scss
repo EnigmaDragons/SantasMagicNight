@@ -1,0 +1,52 @@
+.index .title {
+  text-align: center;
+}
+
+.index p {
+  color: $light-gray;
+  font-size: 0.8em;
+}
+
+.body-content {
+  min-height: 81vh;
+  z-index: 100;
+}
+
+.index .slogan {  
+  text-align: center;
+}
+
+.index .h4 {
+  font-size: 1.3em;
+}
+
+.index li p {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.index ul {
+  list-style: none;
+}
+
+.hero-bg {
+  background-image: linear-gradient(#012e4d, #012d4a);
+  background-size: 100vw auto;
+  background-repeat: repeat-y;
+}
+
+.cta-icon {
+  filter: invert(52%) sepia(72%) saturate(2600%) hue-rotate(164deg) brightness(110%) contrast(105%);
+  opacity: 0.8;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 120px;
+  min-width: 80px;
+  height: auto;
+  transition: all .2s;
+}
+
+.cta-icon:hover {
+  opacity: 1;
+}
+

@@ -1,0 +1,33 @@
+.ctn .pagination  {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.pagination a {
+  max-width: 33vw;
+}
+
+.pagination .pagination-meta {
+  overflow: hidden;
+}
+
+.arrow {
+  width: 64px;
+  height: 64px;
+  opacity: 0.6;
+  transition-duration: 0.5s;
+}
+
+.arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.disabled {
+  display: none;
+}
+
+.ml3rd {
+  margin-left: 25vw;
+}

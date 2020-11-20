@@ -1,0 +1,86 @@
+html {
+  font-size: $base-font-size;
+}
+
+abbr {
+  border-bottom: $abbr-border-bottom;
+  cursor: help;
+}
+
+p {
+  color: $site-color;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+small,
+.small {
+  font-size: 0.707rem;
+}
+
+strong,
+.strong {
+   font-weight: 500;
+}
+
+sup {
+  position: relative;
+  vertical-align: middle;
+  top: -0.9ex;
+}
+
+.title {
+  font-size: 3.0em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.4em;
+}
+
+.script {
+  font-family: $script-font-family;
+  font-weight: $script-font-weight;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.no-bullet li {
+  list-style-type: none;
+}
+
+@font-face {
+	font-family: 'electrolizeregular';
+  src: local('electrolizeregular'), 
+      url('/fonts/electrolize-regular-webfont.woff2') format('woff2'),
+			url('/fonts/electrolize-regular-webfont.woff') format('woff'),
+      url('/fonts/Electrolize-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fontastique';
+  src: local('fontastique'),
+      url('/fonts/Fontastique.woff2') format('woff2'),
+			url('/fonts/Fontastique.woff') format('woff')
+			url('/fonts/Fontastique.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

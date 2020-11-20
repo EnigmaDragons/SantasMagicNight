@@ -1,0 +1,81 @@
+.social-icons-left {
+  justify-content: left;
+}
+.social-icons-right {
+  justify-content: right;
+}
+
+.social-icons-center {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $measure-width;
+  width: 80%;
+  font-size: 1.25rem;
+  padding: 0.25em;
+  text-decoration: none;
+  border-radius: 50%;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15), rgba(0 ,0, 0, 0));
+}
+
+.social-icons a.fa {
+  cursor: pointer;
+  opacity: 0.7;
+  padding: 0 0.4em;
+  margin: 0 0.25em;
+  font-size: 1.25rem;
+  background-image: none;
+}
+
+.social-icons a.fa:hover {
+  opacity: 1;
+  background-image: none;
+}
+
+.social-icons iframe[title=Flattr] {
+  position: relative;
+  top: 0.1em;
+}
+
+.share-page {
+  margin-top: $space-3;
+}
+
+.share-links a {
+  opacity: 0.5;
+  text-decoration: none;
+  background-image: linear-gradient(to top,
+    rgba(0,0,0,0) 13%,
+    rgba($link-hover-color,.8) 13%,
+    rgba($link-hover-color,.8) 17%,
+    rgba(0,0,0,0) 17%
+  );
+}
+
+.share-links a:hover {
+  opacity: 1
+}
+
+.social-icon {
+  margin: 0.2em 0.5em;
+}
+
+.social-icon img {
+  filter: invert(.5) brightness(3);
+  width: 48px;
+  height: auto;
+}
+
+.social-icon img:hover {
+  filter: invert(.5) brightness(1.8);
+}
+
+@media screen and (max-width: $viewport-small) { 
+  .social-icon img {
+    width: 32px;
+  }
+}

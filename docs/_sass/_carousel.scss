@@ -1,0 +1,50 @@
+.carousel-cell {
+  width: 100%; /* full width */
+  min-height: 33vw; 
+  height: auto;
+	max-height: 50vh;
+  margin-right: 10px;
+}
+
+.slider {
+	min-width: 240px;
+	width: 800px;
+  max-width: 80vw;
+  min-height: 33vw; 
+  height: auto;
+  max-height: 50vh;
+}
+
+.flickity-viewport {
+	height: 100%;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 32px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.flickity--prev-next-button {
+  width: 32px;
+  height: 32px;
+  opacity: 50%;
+}
+
+/* .is-fullscreen added to carousel when fullscreen
+  size cells to full height when fullscreen */
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+  

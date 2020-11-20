@@ -1,0 +1,139 @@
+.posts {
+  margin: 0;
+}
+
+.posts .post {
+  margin-bottom: 0.75em;
+  border-bottom: thin solid $divider-color;
+}
+
+.posts .post:last-child {
+  border-bottom: none;
+  margin-bottom: .375em;
+  padding-bottom: 0;
+}
+
+.post-link .post-title {
+  margin-top: 0;
+  font-weight: $bold-font-weight;
+  color: $site-color;
+}
+
+.post-footer {
+  @extend .italic;
+
+  margin-top: .75rem;
+  text-align: center;
+}
+
+.post-footer .avatar {
+  margin: 2rem 0;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.meta,
+.post-meta {
+  width: auto;
+  font-weight: 300;
+  color: $site-color;
+  font-style: italic;
+  font-size: 0.65rem;
+  text-align: left;
+  margin-bottom: 0.4rem;
+}
+
+.post-header h1 {
+  font-weight: $bold-font-weight;
+}
+
+.post-title {  
+  font-weight: $bold-font-weight;
+  font-family: $heading-font-family;
+}
+
+.inverse {  
+  color: $site-bg-color !important;
+}
+
+.related-post-title {
+  margin-top: 3rem;
+  border-bottom: thin solid #f3f3f3;
+}
+
+.related-post-title .post-link .post-title {  
+  font-weight: $light-font-weight;
+}
+
+.post img {
+  max-width: 70vw;
+}
+
+.post-content h1, 
+.post-content h2, 
+.post-content h3, 
+.post-content h4, 
+.post-content h5,
+.post-content h6 {
+  font-family: $font-family;
+  font-weight: 500;
+}  
+
+.post-content hr {
+  margin: 1.5rem 0;
+}
+
+.post-content a {
+  color: $blue;
+  text-decoration: underline;
+}
+
+.post-content a:hover {
+  color: $orange;
+}
+
+.post-content img {  
+  margin-left: 1vw;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content ol {
+  list-style: none; 
+  counter-reset: li;
+}
+
+.post-content li::before {
+  content: counter(li) "."; 
+  color: $site-color;
+  font-weight: 500;
+  display: inline-block; 
+  width: 1.5rem;
+  margin-left: -1.5rem;
+}
+
+.post-content li {
+  counter-increment: li;
+}
+
+.post-content ul {
+  list-style: none; 
+}
+
+.post-content ul li::before {
+  content: "-"; 
+  color: $site-color;
+  font-weight: 500;
+  display: inline-block; 
+  width: 1.5rem;
+  margin-left: -1.5rem;
+}
+
+.post-content ul li {
+}
+
+.post-content .ctn img {
+  margin-left: -6px;
+  margin-bottom: 1rem;
+}

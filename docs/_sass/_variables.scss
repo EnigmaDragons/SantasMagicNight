@@ -1,0 +1,161 @@
+// Typography
+$base-font-size: 14px !default;
+$light-font-weight: 300 !default;
+$body-font-weight: 300 !default;
+$bold-font-weight: 600 !default;
+$font-family: 'Open Sans', 'Merriweather', 'PT Serif', Georgia, 'Times New Roman', sans-serif !default;
+$line-height: 1.5 !default;
+$heading-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
+$heading-font-weight: 500 !default;
+$heading-line-height: 1.25 !default;
+$script-font-family: 'fontastique', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
+$script-font-weight: 400 !default;
+$ornate-font-family: 'fontastique', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$h1: 2.1rem !default;
+$h2: 1.8rem !default;
+$h3: 1.5rem !default;
+$h4: 1.2rem !default;
+$h5: 1rem !default;
+$h6: .75rem !default;
+$h00: 4rem !default;
+$h0: 3rem !default;
+$h00-responsive: 8vw !default;
+$h0-responsive: 6vw !default;
+$h1-responsive: 4vw !default;
+$h00-responsive-max: 7.68rem !default;
+$h0-responsive-max: 5.76rem !default;
+$h1-responsive-max: 3.84rem !default;
+$abbr-border-bottom: 1px black dotted;
+
+// Page width
+$measure-width: 60rem !default;
+
+// Viewport widths
+$viewport-small: 32em;
+$viewport-medium: 48em;
+$viewport-large: 64em;
+
+// Site Theme
+$site-color: #999;
+$header-color: #dedede;
+$site-color-shadow: #dedede;
+$inner-color: $site-color;
+$site-bg-color: #000;
+$inner-bg-color: #343434;
+$shadow: rgba(0,0,0,0.4);
+
+// Colors
+$blue: #0076df !default;
+$red: #f95020 !default;
+$green: #00cf26 !default;
+$yellow: #efcc00 !default;
+$orange: #f88f00 !default;
+$purple: #f92080 !default;
+$dark-blue: #00369f !default;
+$green: #00ab37 !default;
+$dark-green: #009f06 !default;
+$light-pink: #ffdddd !default;
+$light-green: #ddffdd !default;
+$dark-gray: #232323 !default;
+$mid-gray: #777 !default;
+$light-gray: #999 !default;
+$lighter-gray: #eee !default;
+$darken-1: rgba(#000,.0625) !default;
+$darken-2: rgba(#000,.125) !default;
+$darken-3: rgba(#000,.25) !default;
+$darken-4: rgba(#000,.5) !default;
+$white: #fff;
+$off-white: #f7f7f7;
+$transparent-white: rgba(#fff, 100) !default;
+$transparent: rgba(#fff, 0) !default;
+
+// Links
+$link-color: $site-color;
+$link-hover-color: darken($site-color, 40%);
+
+// Breakpoints
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-xl: '(min-width: 96em)';
+
+// Whitespace
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+$space-6: 7em !default;
+$space-8: 12em !default;
+
+// Buttons
+$button-font-size: inherit !default;
+$button-font-weight: normal !default;
+$button-line-height: 1.125rem !default;
+$button-padding-y: .5rem !default;
+$button-padding-x: 1rem !default;
+$button-font-family: $heading-font-family;
+
+// Forms
+$form-field-font-size: 1rem !default;
+$form-field-height: 2.25rem !default;
+$form-field-padding-y: .5rem !default;
+$form-field-padding-x: .5rem !default;
+
+// Borders
+$border-color: #666 !default;
+$border-width: 1px !default;
+$border-radius: 3px !default;
+
+// Forms
+$form-field-font-size: 1rem;
+$form-field-height: 2.25rem;
+$form-field-padding-y: .5rem;
+$form-field-padding-x: .5rem;
+
+// Code
+$pre-border-radius: 10;
+$pre-background-color: $inner-bg-color;
+$pre-font-weight: 300;
+$pre-bold-font-weight: 600;
+$code-font-size: 0.65rem;
+$code-color: $site-color;
+$code-background-color: $inner-bg-color;
+$codeblock-font-size: 0.65rem;
+$hljs-comment: $green;
+$hljs-keyword: #43c2d4;
+$hljs-name: $site-color;
+$hljs-number: $dark-green;
+$hljs-string: $orange;
+$hljs-title: $purple;
+$hljs-type: #b8d7a3;
+$hljs-tag: $purple;
+$hljs-attribute: $dark-green;
+$hljs-regexp: $dark-green;
+$hljs-symbol: $site-color;
+$hljs-built-in: $dark-blue;
+$hljs-preprocessor: $inner-bg-color;
+$hljs-deletion: $light-pink;
+$hljs-addition: $light-green;
+$hljs-change: $dark-blue;
+$hljs-chunk: $inner-bg-color;
+
+// Blockquote
+$blockquote-font-size: 0.6rem;
+
+// Header
+$header-border-bottom: 0;
+$header-padding: 0;
+$header-color: #fff;
+$header-bg-color: $transparent;
+$header-font-weight: 300;
+$header-font-size: $h3;
+
+// Footer
+$footer-border-top: 0;
+$footer-padding: $space-3;
+$footer-color: #fff;
+$footer-bg-color: $transparent;
+$footer-font-weight: 300;
+$footer-font-size: .75rem;
+
+// Dividers
+$divider-color: #1f1f1f;

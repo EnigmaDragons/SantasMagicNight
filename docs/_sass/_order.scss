@@ -1,0 +1,83 @@
+.gumroad-button {
+  margin: 0 auto;
+  max-width: 210px;
+}
+
+.gumroad-loading-link {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+a .order-button,
+.order-button {
+  border-radius: 3px;
+  border: 5px solid #1b817e;
+  background-color: #1b817e;
+  background-repeat: no-repeat;
+  max-width: 320px;
+  margin: 0.6em auto;
+  padding: 0.8em 1.8em;  
+  transition-duration: 0.2s;
+  font-family: $heading-font-family;
+  font-size: $h3;
+  font-weight: $bold-font-weight;
+  color: #fff;
+  line-height: 1.5em;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 $shadow;
+}
+
+a .order-button:hover,
+a .order-button:active,
+a .order-button:focus,
+.order-button:hover,
+.order-button:active,
+.order-button:focus  {
+  background-color: #25bfbb;
+  color: #fff;
+  border: 5px solid #1b817e;
+}
+
+
+@media screen and (max-width: $viewport-small) {
+  .order-button {
+    font-size: $h4;
+  }
+}
+
+.dark .order-button {
+  border: 5px solid #fff;
+  background-color: white;
+  color: #232323;
+}
+
+.dark .order-button:hover,
+.dark .order-button:active,
+.dark .order-button:focus  {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.light .order-button {
+  border: 5px solid #fff;
+  background-color: white;
+  color: #232323;
+}
+
+.light .order-button:hover,
+.light .order-button:active,
+.light .order-button:focus  {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.teal .order-button {
+  border: 5px solid #1b817e;
+  background-color: #1b817e;
+  color: #fff;
+}
+
+.teal .order-button:hover,
+.teal .order-button:active,
+.teal .order-button:focus  {
+  background-color: #25bfbb;
+}

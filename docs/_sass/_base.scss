@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  background: $site-bg-color no-repeat center center fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5em auto;
+}
+
+em img {
+  max-width: 100%;
+  margin-left: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+          box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}

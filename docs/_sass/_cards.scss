@@ -1,0 +1,14 @@
+.card {
+  border-width: 0px;
+  transition: 0.2s;
+  margin: 1em;
+  padding: 1em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.white-bg {
+  background-color: $transparent-white;
+  box-shadow: 0 4px 8px 0 $shadow;
+}
