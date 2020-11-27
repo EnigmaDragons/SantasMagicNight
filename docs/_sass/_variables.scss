@@ -5,13 +5,13 @@ $body-font-weight: 300 !default;
 $bold-font-weight: 600 !default;
 $font-family: 'Open Sans', 'Merriweather', 'PT Serif', Georgia, 'Times New Roman', sans-serif !default;
 $line-height: 1.5 !default;
-$heading-font-family: 'pingwing', 'Helvetica Neue', Helvetica, sans-serif !default;
+$heading-font-family: 'pingwing', 'Comic Sans MS', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
 $heading-font-weight: 500 !default;
 $heading-line-height: 1.25 !default;
-$script-font-family: 'pingwing', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
+$script-font-family: 'pingwing', 'Comic Sans MS', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
 $script-font-weight: 400 !default;
-$ornate-font-family: 'pingwing', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
-$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+$ornate-font-family: 'pingwing', 'Comic Sans MS', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
+$monospace-font-family: 'pingwing', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
 $h1: 2.1rem !default;
 $h2: 1.8rem !default;
 $h3: 1.5rem !default;
@@ -37,7 +37,7 @@ $viewport-medium: 48em;
 $viewport-large: 64em;
 
 // Site Theme
-$site-color: #999;
+$site-color: #bcbcbc;
 $header-color: #dedede;
 $site-color-shadow: #dedede;
 $inner-color: $site-color;
@@ -83,6 +83,7 @@ $space-1: .5rem !default;
 $space-2: 1rem !default;
 $space-3: 2rem !default;
 $space-4: 4rem !default;
+$space-5: 5.5em !default;
 $space-6: 7em !default;
 $space-8: 12em !default;
 

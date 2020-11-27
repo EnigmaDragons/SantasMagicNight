@@ -79,7 +79,7 @@ sup {
 	font-family: 'fontastique';
   src: local('fontastique'),
       url('/fonts/Fontastique.woff2') format('woff2'),
-			url('/fonts/Fontastique.woff') format('woff')
+			url('/fonts/Fontastique.woff') format('woff'),
 			url('/fonts/Fontastique.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
@@ -90,8 +90,9 @@ sup {
 	font-family: 'pingwing';
   src: local('pingwing'),
       url('/fonts/pingwing.woff2') format('woff2'),
-			url('/fonts/pingwing.woff') format('woff')
+			url('/fonts/pingwing.woff') format('woff'),
 			url('/fonts/pingwing.ttf') format('truetype');
 	font-weight: normal;
-	font-style: normal;
+  font-style: normal;
+  font-display: swap;
 }
