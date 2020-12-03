@@ -6,8 +6,12 @@ public sealed class InitUnityAdEngine : MonoBehaviour
     [SerializeField] private SecureStringVariable appleGameId;
     [SerializeField] private SecureStringVariable googleGameId;
     
+#if PRODUCTION
+    private bool isTestMode = false;
+#else
     private bool isTestMode = true;
-    
+#endif   
+
     private void Start()
     {
         var gameId = "";
